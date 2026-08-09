@@ -1,6 +1,20 @@
 {
   "channel": "https://www.youtube.com/@itsdrdan",
-  "generatedAt": null,
-  "note": "Run scripts/build_videos.py or the GitHub Action to populate this file.",
-  "videos": []
+  "step": "3 - external JSON test",
+  "videos": [
+    {
+      "id": "59yqaBoKWss",
+      "title": "ItsDrDan Chemistry Video",
+      "description": "Sample channel video used to verify that the search engine can load its video database from videos.json.",
+      "keywords": "chemistry video review itsdrdan",
+      "course": "ItsDrDan"
+    },
+    {
+      "id": "0dv7bHkPX-8",
+      "title": "ItsDrDan Chemistry Video 2",
+      "description": "Second sample channel video used to verify external JSON loading and embedded YouTube playback.",
+      "keywords": "chemistry video lesson review itsdrdan",
+      "course": "ItsDrDan"
+    }
+  ]
 }
