@@ -241,6 +241,33 @@
     .meta{display:flex;flex-wrap:wrap;gap:7px;margin:6px 0;color:var(--muted);font-size:.69rem;font-weight:850}
     .tag{display:inline-flex;align-items:center;padding:4px 7px;border-radius:999px;background:var(--yellow2);color:#866f2b;font-size:.64rem;font-weight:950}
     .desc{color:var(--muted);font-size:.75rem;line-height:1.42}
+
+    .caption-hit{
+      border:1px solid #d8efe4;
+      background:#f2fff7;
+      color:#47765e;
+      border-radius:10px;
+      padding:5px 7px;
+      cursor:pointer;
+      font-size:.68rem;
+      font-weight:850;
+      max-width:100%;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .caption-hit:hover{background:#e5fff0}
+    .caption-hits{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+    .transcript-tag{
+      display:inline-flex;
+      align-items:center;
+      padding:4px 7px;
+      border-radius:999px;
+      background:var(--mint2);
+      color:#448367;
+      font-size:.64rem;
+      font-weight:950
+    }
     mark{background:#fff0a8;color:inherit;padding:0 .08em;border-radius:3px}
 
     .player-top{padding:15px 16px 16px}
@@ -317,12 +344,13 @@
           <span class="eyebrow">⚗ Chemistry Video Search</span>
           <h1><span class="gradient">ItsDrDan</span><br>Video Finder</h1>
           <p>
-            Search chemistry lessons and play videos without leaving the page.
-            The video library is now loaded from a separate videos.json database, while playback still happens directly through YouTube.
+            Search chemistry lessons by video title or by the actual words spoken in available captions.
+            Click a transcript match to jump straight to that moment in the embedded YouTube player.
           </p>
           <div class="status-row">
-            <span class="status"><span class="dot"></span> Interface ready</span>
+            <span class="status"><span class="dot"></span> Video library ready</span>
             <span class="status">▶ Embedded player ready</span>
+            <span class="status" id="captionStatus">💬 Preparing transcript search…</span>
           </div>
         </div>
         <div class="logo-box">
@@ -342,7 +370,7 @@
         </div>
 
         <div class="chips">
-          <span class="chips-label">Test searches:</span>
+          <span class="chips-label">Quick searches:</span>
           <button class="chip" data-term="periodic table">periodic table</button>
           <button class="chip" data-term="molar mass">molar mass</button>
           <button class="chip" data-term="isotopes">isotopes</button>
@@ -350,7 +378,8 @@
         </div>
 
         <div class="note">
-          The search engine is now loading real ItsDrDan videos from <strong>videos.json</strong>. Once this works reliably on GitHub Pages, we can expand the same database to the complete channel library.
+          Transcript indexing happens in the background. Title search works immediately; as saved VTT files finish loading,
+          searches can also find phrases spoken inside the videos and provide clickable timestamps.
         </div>
       </section>
     </header>
@@ -391,6 +420,154 @@
 
   <script>
     let VIDEOS = [];
+    let player = null;
+    let currentVideo = null;
+    let currentSeconds = 0;
+
+    const $ = s => document.querySelector(s);
+    const input = $("#searchInput");
+    const list = $("#resultList");
+    const summary = $("#summary");
+    const placeholder = $("#placeholder");
+    const nowTitle = $("#nowTitle");
+    const nowMeta = $("#nowMeta");
+    const captionStatus = $("#captionStatus");
+
+    const CHEM_SYNONYMS = [
+      ["imf","intermolecular force","intermolecular forces"],
+      ["h bond","hydrogen bond","hydrogen bonding"],
+      ["limiting reagent","limiting reactant"],
+      ["excess reagent","excess reactant"],
+      ["sig figs","significant figures"],
+      ["lewis dot","lewis structure","lewis structures"],
+      ["vsepr","molecular geometry","molecular shape"],
+      ["pv=nrt","ideal gas law"],
+      ["redox","oxidation reduction"],
+      ["mole conversion","stoichiometry"],
+      ["electron configuration","orbital configuration"],
+      ["molar mass","molecular weight","formula mass"]
+    ];
+
+    function esc(v="") {
+      return String(v).replace(/[&<>"']/g,c=>({
+        "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+      }[c]));
+    }
+
+    function normalize(v="") {
+      return String(v)
+        .toLowerCase()
+        .normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g,"")
+        .replace(/[^a-z0-9+\-.'=\s]/g," ")
+        .replace(/\s+/g," ")
+        .trim();
+    }
+
+    function queryVariants(q) {
+      const base = normalize(q);
+      if (!base) return [];
+      const out = new Set([base]);
+      for (const group of CHEM_SYNONYMS) {
+        const normalized = group.map(normalize);
+        if (normalized.some(term => base.includes(term) || term.includes(base))) {
+          normalized.forEach(term => out.add(term));
+        }
+      }
+      return [...out];
+    }
+
+    function queryTokens(q) {
+      return normalize(q).split(" ").filter(t => t.length > 1);
+    }
+
+    function formatTime(seconds=0) {
+      seconds = Math.max(0, Math.floor(Number(seconds)||0));
+      const h = Math.floor(seconds/3600);
+      const m = Math.floor((seconds%3600)/60);
+      const s = seconds%60;
+      return h
+        ? `${h}:${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}`
+        : `${m}:${String(s).padStart(2,"0")}`;
+    }
+
+    function highlight(text,q) {
+      if(!q) return esc(text);
+      let safe = esc(text);
+      const words = [...new Set(queryVariants(q).flatMap(queryTokens))]
+        .sort((a,b)=>b.length-a.length);
+
+      for (const word of words) {
+        if (word.length < 2) continue;
+        const term = word.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+        safe = safe.replace(new RegExp(`(${term})`,"ig"),"<mark>$1</mark>");
+      }
+      return safe;
+    }
+
+    function parseStamp(t) {
+      const p = t.trim().replace(",",".").split(":").map(Number);
+      if (p.some(Number.isNaN)) return 0;
+      if (p.length === 3) return p[0]*3600 + p[1]*60 + p[2];
+      if (p.length === 2) return p[0]*60 + p[1];
+      return p[0] || 0;
+    }
+
+    function cleanCue(text) {
+      const ta = document.createElement("textarea");
+      ta.innerHTML = text
+        .replace(/<v[^>]*>/gi,"")
+        .replace(/<\/v>/gi,"")
+        .replace(/<c[^>]*>/gi,"")
+        .replace(/<\/c>/gi,"")
+        .replace(/<[^>]+>/g,"")
+        .replace(/\{[^}]+\}/g,"");
+      return ta.value.replace(/\s+/g," ").trim();
+    }
+
+    function parseVTT(vtt) {
+      const lines = vtt.replace(/^\uFEFF/,"").split(/\r?\n/);
+      const cues = [];
+      let i = 0;
+
+      while (i < lines.length) {
+        const line = lines[i].trim();
+
+        if (!line || /^WEBVTT/i.test(line) || /^NOTE\b/i.test(line) ||
+            /^STYLE\b/i.test(line) || /^REGION\b/i.test(line)) {
+          i++;
+          continue;
+        }
+
+        let timing = line;
+        if (!timing.includes("-->") && i+1 < lines.length && lines[i+1].includes("-->")) {
+          i++;
+          timing = lines[i].trim();
+        }
+
+        if (!timing.includes("-->")) {
+          i++;
+          continue;
+        }
+
+        const [left,rightRaw] = timing.split("-->");
+        const right = rightRaw.trim().split(/\s+/)[0];
+        const start = parseStamp(left);
+        const end = parseStamp(right);
+        i++;
+
+        const text = [];
+        while (i < lines.length && lines[i].trim() !== "") {
+          text.push(lines[i].trim());
+          i++;
+        }
+
+        const cleaned = cleanCue(text.join(" "));
+        if (cleaned) cues.push({start,end,text:cleaned});
+      }
+
+      return cues;
+    }
 
     async function loadVideoLibrary() {
       summary.textContent = "Loading video library…";
@@ -403,18 +580,24 @@
 
       try {
         const response = await fetch("./videos.json", { cache: "no-store" });
-        if (!response.ok) {
-          throw new Error(`videos.json returned HTTP ${response.status}`);
-        }
+        if (!response.ok) throw new Error(`videos.json returned HTTP ${response.status}`);
 
         const data = await response.json();
-        VIDEOS = Array.isArray(data) ? data : (data.videos || []);
+        VIDEOS = (Array.isArray(data) ? data : (data.videos || [])).map((v,index)=>({
+          ...v,
+          order:Number.isFinite(Number(v.order)) ? Number(v.order) : index,
+          description:v.description || "",
+          keywords:v.keywords || "",
+          course:v.course || "",
+          transcript:"",
+          cues:[],
+          captionReady:false
+        }));
 
-        if (!VIDEOS.length) {
-          throw new Error("videos.json is valid but contains no videos.");
-        }
+        if (!VIDEOS.length) throw new Error("videos.json contains no videos.");
 
         render();
+        loadCaptionsInBackground();
       } catch (error) {
         console.error(error);
         summary.textContent = "Library error";
@@ -422,62 +605,172 @@
           <div style="text-align:center;padding:60px 20px;color:#786b80">
             <div style="font-size:52px">🥺</div>
             <h3 style="color:#44364d">Could not load videos.json</h3>
-            <p>Make sure <strong>videos.json</strong> is uploaded beside <strong>index.html</strong> in the repository root.</p>
+            <p>Make sure <strong>videos.json</strong> is uploaded beside <strong>index.html</strong>.</p>
           </div>`;
       }
     }
 
-    const $ = s => document.querySelector(s);
-    const input = $("#searchInput");
-    const list = $("#resultList");
-    const summary = $("#summary");
-    const placeholder = $("#placeholder");
-    const nowTitle = $("#nowTitle");
-    const nowMeta = $("#nowMeta");
-
-    let player = null;
-
-    function esc(v="") {
-      return String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
+    async function runPool(items,limit,worker) {
+      let cursor = 0;
+      const runners = Array.from({length:Math.min(limit,items.length)}, async () => {
+        while (cursor < items.length) {
+          const index = cursor++;
+          await worker(items[index], index);
+        }
+      });
+      await Promise.all(runners);
     }
 
-    function highlight(text,q) {
-      if(!q) return esc(text);
-      const safe = esc(text);
-      const term = q.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
-      return safe.replace(new RegExp(`(${term})`,"ig"),"<mark>$1</mark>");
+    async function loadCaptionsInBackground() {
+      const captioned = VIDEOS.filter(v => v.caption);
+      if (!captioned.length) {
+        captionStatus.textContent = "💬 No saved transcripts yet";
+        return;
+      }
+
+      let finished = 0;
+      let ready = 0;
+      captionStatus.textContent = `💬 Loading 0/${captioned.length} transcripts…`;
+
+      await runPool(captioned, 6, async v => {
+        try {
+          const response = await fetch(v.caption, {cache:"force-cache"});
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const cues = parseVTT(await response.text());
+          v.cues = cues;
+          v.transcript = cues.map(c=>c.text).join(" ");
+          v.captionReady = cues.length > 0;
+          if (v.captionReady) ready++;
+        } catch (err) {
+          console.warn("Could not load caption:", v.id, err);
+        } finally {
+          finished++;
+          captionStatus.textContent = `💬 Loading ${finished}/${captioned.length} transcripts…`;
+          if (finished % 8 === 0) render();
+        }
+      });
+
+      captionStatus.textContent = `💬 ${ready} searchable transcripts`;
+      render();
+    }
+
+    function transcriptHits(video,q) {
+      if (!video.captionReady || !q) return [];
+      const variants = queryVariants(q);
+      const hits = [];
+
+      for (const cue of video.cues) {
+        const hay = normalize(cue.text);
+        let points = 0;
+
+        for (const variant of variants) {
+          if (hay.includes(variant)) {
+            points += 12;
+          } else {
+            const ts = queryTokens(variant);
+            const matched = ts.filter(t=>hay.includes(t)).length;
+            if (matched >= Math.max(1,Math.ceil(ts.length*.7))) {
+              points += matched;
+            }
+          }
+        }
+
+        if (points > 0) {
+          hits.push({start:cue.start,text:cue.text,points});
+        }
+      }
+
+      return hits.sort((a,b)=>b.points-a.points).slice(0,3);
+    }
+
+    function scoreVideo(video,q) {
+      if (!q) return {score:1,hits:[]};
+
+      const variants = queryVariants(q);
+      const title = normalize(video.title);
+      const desc = normalize(video.description);
+      const keys = normalize(video.keywords);
+      const transcript = normalize(video.transcript);
+      let score = 0;
+
+      for (const term of variants) {
+        if (title === term) score += 300;
+        if (title.includes(term)) score += 160;
+        if (keys.includes(term)) score += 100;
+        if (desc.includes(term)) score += 55;
+        if (transcript && transcript.includes(term)) score += 130;
+
+        for (const token of queryTokens(term)) {
+          if (title.includes(token)) score += 32;
+          if (keys.includes(token)) score += 22;
+          if (desc.includes(token)) score += 8;
+          if (transcript && transcript.includes(token)) score += 13;
+        }
+      }
+
+      const hits = transcriptHits(video,q);
+      score += hits.length * 20;
+
+      return {score,hits};
     }
 
     function render() {
-      const q = input.value.trim().toLowerCase();
-      const results = VIDEOS.filter(v => {
-        if(!q) return true;
-        return `${v.title} ${v.description} ${v.keywords}`.toLowerCase().includes(q);
+      const q = input.value.trim();
+
+      let results = VIDEOS.map(v => {
+        const match = scoreVideo(v,q);
+        return {...v,_score:match.score,_hits:match.hits};
+      });
+
+      if (q) results = results.filter(v => v._score > 0);
+
+      results.sort((a,b)=>{
+        if (q && b._score !== a._score) return b._score - a._score;
+        return a.order - b.order;
       });
 
       summary.textContent = `${results.length} video${results.length===1?"":"s"}`;
 
-      list.innerHTML = results.length ? results.map(v => `
+      list.innerHTML = results.length ? results.slice(0,100).map(v => `
         <article class="card">
-          <div class="thumb" data-play="${v.id}">
-            <img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="" loading="lazy">
+          <div class="thumb" data-play="${esc(v.id)}" data-start="${v._hits?.[0]?.start || 0}">
+            <img src="${esc(v.thumbnail || `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`)}" alt="" loading="lazy">
             <span class="play">▶</span>
           </div>
           <div>
-            <button class="title" type="button" data-play="${v.id}">${highlight(v.title,q)}</button>
-            <div class="meta"><span class="tag">${esc(v.course)}</span></div>
+            <button class="title" type="button" data-play="${esc(v.id)}" data-start="${v._hits?.[0]?.start || 0}">
+              ${highlight(v.title,q)}
+            </button>
+            <div class="meta">
+              ${v.course ? `<span class="tag">${esc(v.course)}</span>` : ""}
+              ${v.captionReady ? `<span class="transcript-tag">💬 transcript</span>` : ""}
+            </div>
             <div class="desc">${highlight(v.description,q)}</div>
+            ${v._hits?.length ? `
+              <div class="caption-hits">
+                ${v._hits.map(hit=>`
+                  <button class="caption-hit" type="button"
+                    data-play="${esc(v.id)}"
+                    data-start="${hit.start}"
+                    title="${esc(hit.text)}">
+                    💬 ${formatTime(hit.start)} · ${highlight(hit.text.slice(0,78),q)}
+                  </button>
+                `).join("")}
+              </div>
+            ` : ""}
           </div>
         </article>
       `).join("") : `
         <div style="text-align:center;padding:60px 20px;color:#786b80">
           <div style="font-size:52px">🥺</div>
-          <h3 style="color:#44364d">No sample match</h3>
-          <p>Try “chemistry”, “review”, or clear the search.</p>
+          <h3 style="color:#44364d">No match yet</h3>
+          <p>Try a broader chemistry term or phrase.</p>
         </div>`;
 
       document.querySelectorAll("[data-play]").forEach(el => {
-        el.addEventListener("click",() => playVideo(el.dataset.play));
+        el.addEventListener("click",() => {
+          playVideo(el.dataset.play, Number(el.dataset.start)||0);
+        });
       });
     }
 
@@ -486,7 +779,7 @@
     function ensurePlayer(id) {
       return new Promise(resolve => {
         const create = () => {
-          if(player) return resolve(player);
+          if (player) return resolve(player);
           player = new YT.Player("player", {
             videoId:id,
             playerVars:{rel:0,playsinline:1},
@@ -498,9 +791,11 @@
             }
           });
         };
-        if(window.YT?.Player) return create();
+
+        if (window.YT?.Player) return create();
+
         const wait = setInterval(()=>{
-          if(window.YT?.Player) {
+          if (window.YT?.Player) {
             clearInterval(wait);
             create();
           }
@@ -508,23 +803,31 @@
       });
     }
 
-    async function playVideo(id) {
+    async function playVideo(id,startSeconds=0) {
       const v = VIDEOS.find(x=>x.id===id);
       if(!v) return;
+
+      currentVideo = v;
+      currentSeconds = startSeconds;
       placeholder.hidden = true;
       nowTitle.textContent = v.title;
-      nowMeta.textContent = "Playing from the ItsDrDan YouTube channel.";
+      nowMeta.textContent = startSeconds
+        ? `Jumped to transcript match at ${formatTime(startSeconds)}.`
+        : "Playing from the ItsDrDan YouTube channel.";
+
       const p = await ensurePlayer(id);
-      p.loadVideoById(id);
+      p.loadVideoById({videoId:id,startSeconds});
     }
 
     $("#searchBtn").addEventListener("click",render);
     input.addEventListener("input",render);
     $("#clearBtn").addEventListener("click",()=>{input.value="";render();input.focus()});
     $("#randomBtn").addEventListener("click",()=>{
+      if (!VIDEOS.length) return;
       const v = VIDEOS[Math.floor(Math.random()*VIDEOS.length)];
-      playVideo(v.id);
+      playVideo(v.id,0);
     });
+
     document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{
       input.value=b.dataset.term;
       render();
