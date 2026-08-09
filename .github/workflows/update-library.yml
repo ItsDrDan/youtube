@@ -1,0 +1,93 @@
+name: Update ItsDrDan video library
+
+on:
+  # Run whenever you intentionally change the website.
+  push:
+    branches:
+      - main
+    paths:
+      - "index.html"
+      - "videos.json"
+      - "scripts/build_videos.py"
+      - ".github/workflows/update-library.yml"
+
+  # Gives you a Run workflow button in the Actions tab.
+  workflow_dispatch:
+
+  # Check the public channel once each day.
+  schedule:
+    - cron: "23 11 * * *"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: itsdrdan-video-finder-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install yt-dlp
+        run: python -m pip install --upgrade "yt-dlp[default]"
+
+      - name: Populate videos.json from ItsDrDan YouTube channel
+        run: python scripts/build_videos.py
+
+      - name: Save updated video library
+        run: |
+          if git diff --quiet -- videos.json; then
+            echo "videos.json is already current."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add videos.json
+            git commit -m "Update ItsDrDan YouTube library"
+            git push
+          fi
+
+      - name: Prepare website for GitHub Pages
+        run: |
+          rm -rf _site
+          mkdir -p _site
+          cp index.html _site/index.html
+          cp videos.json _site/videos.json
+          touch _site/.nojekyll
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
