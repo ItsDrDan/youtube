@@ -318,7 +318,7 @@
           <h1><span class="gradient">ItsDrDan</span><br>Video Finder</h1>
           <p>
             Search chemistry lessons and play videos without leaving the page.
-            This is the interface test; the complete channel library will be connected in the next step.
+            The video library is now loaded from a separate videos.json database, while playback still happens directly through YouTube.
           </p>
           <div class="status-row">
             <span class="status"><span class="dot"></span> Interface ready</span>
@@ -334,7 +334,7 @@
         <div class="search-grid">
           <div class="input-wrap">
             <span class="search-icon">🔎</span>
-            <input id="searchInput" type="search" placeholder="Try: chemistry, gas laws, review…" autocomplete="off">
+            <input id="searchInput" type="search" placeholder="Try: isotopes, molar mass, electron configuration…" autocomplete="off">
             <button id="clearBtn" class="clear" type="button" aria-label="Clear search">×</button>
           </div>
           <button id="searchBtn" class="main-btn" type="button">Search ✨</button>
@@ -343,14 +343,14 @@
 
         <div class="chips">
           <span class="chips-label">Test searches:</span>
-          <button class="chip" data-term="chemistry">chemistry</button>
-          <button class="chip" data-term="review">review</button>
-          <button class="chip" data-term="video">video</button>
+          <button class="chip" data-term="periodic table">periodic table</button>
+          <button class="chip" data-term="molar mass">molar mass</button>
+          <button class="chip" data-term="isotopes">isotopes</button>
+          <button class="chip" data-term="electron configuration">electron configuration</button>
         </div>
 
         <div class="note">
-          For this step, only two sample ItsDrDan videos are included so we can test the search cards and player.
-          The full channel library comes next.
+          The search engine is now loading real ItsDrDan videos from <strong>videos.json</strong>. Once this works reliably on GitHub Pages, we can expand the same database to the complete channel library.
         </div>
       </section>
     </header>
@@ -390,22 +390,42 @@
   </div>
 
   <script>
-    const VIDEOS = [
-      {
-        id: "59yqaBoKWss",
-        title: "ItsDrDan Chemistry Video",
-        description: "Sample channel video used to test the search interface and embedded player.",
-        keywords: "chemistry video review itsdrdan",
-        course: "ItsDrDan"
-      },
-      {
-        id: "0dv7bHkPX-8",
-        title: "ItsDrDan Chemistry Video 2",
-        description: "Second sample channel video used for testing the search and player layout.",
-        keywords: "chemistry video lesson review itsdrdan",
-        course: "ItsDrDan"
+    let VIDEOS = [];
+
+    async function loadVideoLibrary() {
+      summary.textContent = "Loading video library…";
+      list.innerHTML = `
+        <div style="text-align:center;padding:60px 20px;color:#786b80">
+          <div style="font-size:52px">🧪</div>
+          <h3 style="color:#44364d">Loading the video library…</h3>
+          <p>Reading videos.json from GitHub Pages.</p>
+        </div>`;
+
+      try {
+        const response = await fetch("./videos.json", { cache: "no-store" });
+        if (!response.ok) {
+          throw new Error(`videos.json returned HTTP ${response.status}`);
+        }
+
+        const data = await response.json();
+        VIDEOS = Array.isArray(data) ? data : (data.videos || []);
+
+        if (!VIDEOS.length) {
+          throw new Error("videos.json is valid but contains no videos.");
+        }
+
+        render();
+      } catch (error) {
+        console.error(error);
+        summary.textContent = "Library error";
+        list.innerHTML = `
+          <div style="text-align:center;padding:60px 20px;color:#786b80">
+            <div style="font-size:52px">🥺</div>
+            <h3 style="color:#44364d">Could not load videos.json</h3>
+            <p>Make sure <strong>videos.json</strong> is uploaded beside <strong>index.html</strong> in the repository root.</p>
+          </div>`;
       }
-    ];
+    }
 
     const $ = s => document.querySelector(s);
     const input = $("#searchInput");
@@ -514,7 +534,7 @@
     yt.src = "https://www.youtube.com/iframe_api";
     document.head.appendChild(yt);
 
-    render();
+    loadVideoLibrary();
   </script>
 </body>
 </html>
