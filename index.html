@@ -28,6 +28,7 @@
     }
 
     *{box-sizing:border-box}
+    [hidden]{display:none!important}
     html{scroll-behavior:smooth}
     body{
       margin:0;
@@ -310,6 +311,55 @@
       line-height:1.5;
     }
 
+
+    .transcript-panel{
+      border-top:1px solid #eee4f2;
+      background:rgba(255,255,255,.58);
+      max-height:340px;
+      overflow:auto;
+      padding:12px 16px 16px;
+    }
+    .transcript-head{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:10px;
+      margin-bottom:8px;
+    }
+    .transcript-head strong{font-size:.82rem}
+    .transcript-head span{font-size:.7rem;color:var(--muted);font-weight:800}
+    .cue-row{
+      display:grid;
+      grid-template-columns:58px minmax(0,1fr);
+      gap:8px;
+      width:100%;
+      border:0;
+      text-align:left;
+      background:transparent;
+      border-radius:10px;
+      padding:7px;
+      cursor:pointer;
+    }
+    .cue-row:hover{background:#f7f1fa}
+    .cue-row.active{background:#f0eaff}
+    .cue-time{
+      color:#8b6fb4;
+      font-size:.69rem;
+      font-weight:950;
+    }
+    .cue-text{
+      font-size:.76rem;
+      line-height:1.4;
+      color:var(--ink);
+    }
+    .transcript-empty{
+      color:var(--muted);
+      text-align:center;
+      padding:28px 12px;
+      font-size:.78rem;
+      line-height:1.5;
+    }
+
     footer{text-align:center;color:var(--muted);font-size:.76rem;margin-top:20px;padding:20px}
     footer a{font-weight:950;text-decoration:none;color:#8567c8}
 
@@ -401,13 +451,23 @@
               <div>
                 <div style="font-size:62px">▶️</div>
                 <h3>Pick a video!</h3>
-                <p>Click one of the sample results and it will play right here.</p>
+                <p>Click any search result and it will play right here.</p>
               </div>
             </div>
           </div>
           <div class="now">
             <div id="nowTitle">Nothing playing yet</div>
-            <div id="nowMeta">Select a result to test the embedded YouTube player.</div>
+            <div id="nowMeta">Select a video to begin.</div>
+          </div>
+        </div>
+
+        <div id="transcriptPanel" class="transcript-panel">
+          <div class="transcript-head">
+            <strong>💬 Video Transcript</strong>
+            <span id="transcriptInfo">Select a video</span>
+          </div>
+          <div id="transcriptBody" class="transcript-empty">
+            Choose a video to view its searchable transcript.
           </div>
         </div>
       </aside>
@@ -432,6 +492,8 @@
     const nowTitle = $("#nowTitle");
     const nowMeta = $("#nowMeta");
     const captionStatus = $("#captionStatus");
+    const transcriptBody = $("#transcriptBody");
+    const transcriptInfo = $("#transcriptInfo");
 
     const CHEM_SYNONYMS = [
       ["imf","intermolecular force","intermolecular forces"],
@@ -652,6 +714,14 @@
 
       captionStatus.textContent = `💬 ${ready} searchable transcripts`;
       render();
+
+      if (currentVideo) {
+        const refreshed = VIDEOS.find(v => v.id === currentVideo.id);
+        if (refreshed) {
+          currentVideo = refreshed;
+          renderTranscriptPanel(refreshed);
+        }
+      }
     }
 
     function transcriptHits(video,q) {
@@ -774,6 +844,64 @@
       });
     }
 
+
+    function renderTranscriptPanel(video) {
+      if (!transcriptBody || !transcriptInfo) return;
+
+      if (!video) {
+        transcriptInfo.textContent = "Select a video";
+        transcriptBody.className = "transcript-empty";
+        transcriptBody.innerHTML = "Choose a video to view its searchable transcript.";
+        return;
+      }
+
+      if (!video.captionReady || !video.cues?.length) {
+        transcriptInfo.textContent = "Transcript not saved yet";
+        transcriptBody.className = "transcript-empty";
+        transcriptBody.innerHTML =
+          "This video does not have a saved searchable VTT yet. " +
+          "The automatic updater will continue trying missing English captions on future runs.";
+        return;
+      }
+
+      transcriptInfo.textContent = `${video.cues.length} caption cues`;
+      transcriptBody.className = "";
+      transcriptBody.innerHTML = video.cues.map(cue => `
+        <button class="cue-row" type="button" data-cue-start="${cue.start}">
+          <span class="cue-time">${formatTime(cue.start)}</span>
+          <span class="cue-text">${highlight(cue.text, input.value.trim())}</span>
+        </button>
+      `).join("");
+
+      transcriptBody.querySelectorAll("[data-cue-start]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const sec = Number(btn.dataset.cueStart) || 0;
+          currentSeconds = sec;
+
+          transcriptBody.querySelectorAll(".cue-row")
+            .forEach(row => row.classList.remove("active"));
+          btn.classList.add("active");
+
+          if (player?.seekTo) {
+            player.seekTo(sec, true);
+            player.playVideo?.();
+          } else {
+            playVideo(video.id, sec);
+          }
+
+          nowMeta.textContent = `Jumped to ${formatTime(sec)} in the transcript.`;
+        });
+      });
+
+      if (input.value.trim()) {
+        requestAnimationFrame(() => {
+          transcriptBody.querySelector("mark")
+            ?.closest(".cue-row")
+            ?.scrollIntoView({block:"center"});
+        });
+      }
+    }
+
     window.onYouTubeIframeAPIReady = function() {};
 
     function ensurePlayer(id) {
@@ -809,14 +937,32 @@
 
       currentVideo = v;
       currentSeconds = startSeconds;
+
+      // Hide the decorative overlay immediately so the selected YouTube
+      // video is visible in the large player.
       placeholder.hidden = true;
+      placeholder.style.display = "none";
+
       nowTitle.textContent = v.title;
       nowMeta.textContent = startSeconds
         ? `Jumped to transcript match at ${formatTime(startSeconds)}.`
         : "Playing from the ItsDrDan YouTube channel.";
 
+      renderTranscriptPanel(v);
+
       const p = await ensurePlayer(id);
       p.loadVideoById({videoId:id,startSeconds});
+
+      // If the player is stacked or off-screen, bring it into view.
+      requestAnimationFrame(() => {
+        const panel = document.querySelector(".player-panel");
+        if (!panel) return;
+        const rect = panel.getBoundingClientRect();
+        const outsideViewport = rect.top < 0 || rect.top > window.innerHeight * 0.72;
+        if (window.innerWidth < 1000 || outsideViewport) {
+          panel.scrollIntoView({behavior:"smooth", block:"start"});
+        }
+      });
     }
 
     $("#searchBtn").addEventListener("click",render);
