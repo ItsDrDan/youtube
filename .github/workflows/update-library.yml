@@ -1,20 +1,23 @@
-name: Update ItsDrDan video library
+name: Update ItsDrDan videos and transcripts
 
 on:
-  # Run whenever you intentionally change the website.
   push:
     branches:
       - main
     paths:
       - "index.html"
       - "videos.json"
+      - "captions/**"
       - "scripts/build_videos.py"
       - ".github/workflows/update-library.yml"
 
-  # Gives you a Run workflow button in the Actions tab.
   workflow_dispatch:
+    inputs:
+      caption_limit:
+        description: "Maximum missing captions to try this run (0 = all)"
+        required: false
+        default: "20"
 
-  # Check the public channel once each day.
   schedule:
     - cron: "23 11 * * *"
 
@@ -30,7 +33,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
+
+    env:
+      CAPTION_LIMIT: ${{ github.event.inputs.caption_limit || '20' }}
 
     steps:
       - name: Check out repository
@@ -41,30 +47,36 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install yt-dlp
+      - name: Install current yt-dlp
         run: python -m pip install --upgrade "yt-dlp[default]"
 
-      - name: Populate videos.json from ItsDrDan YouTube channel
+      - name: Update video library and missing transcripts
         run: python scripts/build_videos.py
 
-      - name: Save updated video library
+      - name: Save updated library and VTT files
         run: |
-          if git diff --quiet -- videos.json; then
-            echo "videos.json is already current."
+          if git diff --quiet -- videos.json captions/; then
+            echo "No library or transcript changes."
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add videos.json
-            git commit -m "Update ItsDrDan YouTube library"
+            git add videos.json captions/
+            git commit -m "Update ItsDrDan videos and transcripts"
             git push
           fi
 
       - name: Prepare website for GitHub Pages
         run: |
           rm -rf _site
-          mkdir -p _site
+          mkdir -p _site/captions
+
           cp index.html _site/index.html
           cp videos.json _site/videos.json
+
+          if [ -d captions ]; then
+            find captions -maxdepth 1 -type f -name '*.vtt' -exec cp {} _site/captions/ \;
+          fi
+
           touch _site/.nojekyll
 
       - name: Configure GitHub Pages
