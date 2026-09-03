@@ -1,8 +1,8 @@
 {
   "channel": "https://www.youtube.com/@itsdrdan",
-  "generatedAt": "2026-09-02T11:29:53.338105+00:00",
+  "generatedAt": "2026-09-03T11:30:14.942382+00:00",
   "videoCount": 151,
-  "captionCount": 0,
+  "captionCount": 20,
   "videos": [
     {
       "id": "Nb4z-SSwmb4",
@@ -16,7 +16,7 @@
       "uploadDate": "",
       "order": 0,
       "url": "https://www.youtube.com/watch?v=Nb4z-SSwmb4",
-      "caption": null
+      "caption": "./captions/Nb4z-SSwmb4.vtt"
     },
     {
       "id": "nN-RMEEbjLI",
@@ -30,7 +30,7 @@
       "uploadDate": "",
       "order": 1,
       "url": "https://www.youtube.com/watch?v=nN-RMEEbjLI",
-      "caption": null
+      "caption": "./captions/nN-RMEEbjLI.vtt"
     },
     {
       "id": "kEkvxf6e-Ro",
@@ -44,7 +44,7 @@
       "uploadDate": "",
       "order": 2,
       "url": "https://www.youtube.com/watch?v=kEkvxf6e-Ro",
-      "caption": null
+      "caption": "./captions/kEkvxf6e-Ro.vtt"
     },
     {
       "id": "r3IGajq0hD8",
@@ -58,7 +58,7 @@
       "uploadDate": "",
       "order": 3,
       "url": "https://www.youtube.com/watch?v=r3IGajq0hD8",
-      "caption": null
+      "caption": "./captions/r3IGajq0hD8.vtt"
     },
     {
       "id": "NoEGwwWuNmg",
@@ -72,7 +72,7 @@
       "uploadDate": "",
       "order": 4,
       "url": "https://www.youtube.com/watch?v=NoEGwwWuNmg",
-      "caption": null
+      "caption": "./captions/NoEGwwWuNmg.vtt"
     },
     {
       "id": "zr0Y2hF_aOE",
@@ -86,7 +86,7 @@
       "uploadDate": "",
       "order": 5,
       "url": "https://www.youtube.com/watch?v=zr0Y2hF_aOE",
-      "caption": null
+      "caption": "./captions/zr0Y2hF_aOE.vtt"
     },
     {
       "id": "txENA0lLLg4",
@@ -100,7 +100,7 @@
       "uploadDate": "",
       "order": 6,
       "url": "https://www.youtube.com/watch?v=txENA0lLLg4",
-      "caption": null
+      "caption": "./captions/txENA0lLLg4.vtt"
     },
     {
       "id": "6GcGBVTu3c8",
@@ -114,7 +114,7 @@
       "uploadDate": "",
       "order": 7,
       "url": "https://www.youtube.com/watch?v=6GcGBVTu3c8",
-      "caption": null
+      "caption": "./captions/6GcGBVTu3c8.vtt"
     },
     {
       "id": "ec1npXqFdDM",
@@ -128,7 +128,7 @@
       "uploadDate": "",
       "order": 8,
       "url": "https://www.youtube.com/watch?v=ec1npXqFdDM",
-      "caption": null
+      "caption": "./captions/ec1npXqFdDM.vtt"
     },
     {
       "id": "PslRg4W-QDY",
@@ -142,7 +142,7 @@
       "uploadDate": "",
       "order": 9,
       "url": "https://www.youtube.com/watch?v=PslRg4W-QDY",
-      "caption": null
+      "caption": "./captions/PslRg4W-QDY.vtt"
     },
     {
       "id": "NYbTp0OEHCM",
@@ -156,7 +156,7 @@
       "uploadDate": "",
       "order": 10,
       "url": "https://www.youtube.com/watch?v=NYbTp0OEHCM",
-      "caption": null
+      "caption": "./captions/NYbTp0OEHCM.vtt"
     },
     {
       "id": "b4DBut72xEI",
@@ -170,7 +170,7 @@
       "uploadDate": "",
       "order": 11,
       "url": "https://www.youtube.com/watch?v=b4DBut72xEI",
-      "caption": null
+      "caption": "./captions/b4DBut72xEI.vtt"
     },
     {
       "id": "JutTTWvB2wQ",
@@ -184,7 +184,7 @@
       "uploadDate": "",
       "order": 12,
       "url": "https://www.youtube.com/watch?v=JutTTWvB2wQ",
-      "caption": null
+      "caption": "./captions/JutTTWvB2wQ.vtt"
     },
     {
       "id": "OxLTA0CZrd4",
@@ -198,7 +198,7 @@
       "uploadDate": "",
       "order": 13,
       "url": "https://www.youtube.com/watch?v=OxLTA0CZrd4",
-      "caption": null
+      "caption": "./captions/OxLTA0CZrd4.vtt"
     },
     {
       "id": "9lxWINhQtUc",
@@ -212,7 +212,7 @@
       "uploadDate": "",
       "order": 14,
       "url": "https://www.youtube.com/watch?v=9lxWINhQtUc",
-      "caption": null
+      "caption": "./captions/9lxWINhQtUc.vtt"
     },
     {
       "id": "oV83y0awOow",
@@ -226,7 +226,7 @@
       "uploadDate": "",
       "order": 15,
       "url": "https://www.youtube.com/watch?v=oV83y0awOow",
-      "caption": null
+      "caption": "./captions/oV83y0awOow.vtt"
     },
     {
       "id": "EnO_abUy44Q",
@@ -240,7 +240,7 @@
       "uploadDate": "",
       "order": 16,
       "url": "https://www.youtube.com/watch?v=EnO_abUy44Q",
-      "caption": null
+      "caption": "./captions/EnO_abUy44Q.vtt"
     },
     {
       "id": "e8MKqfkXo4k",
@@ -254,7 +254,7 @@
       "uploadDate": "",
       "order": 17,
       "url": "https://www.youtube.com/watch?v=e8MKqfkXo4k",
-      "caption": null
+      "caption": "./captions/e8MKqfkXo4k.vtt"
     },
     {
       "id": "bZHo3kHvGi0",
@@ -268,7 +268,7 @@
       "uploadDate": "",
       "order": 18,
       "url": "https://www.youtube.com/watch?v=bZHo3kHvGi0",
-      "caption": null
+      "caption": "./captions/bZHo3kHvGi0.vtt"
     },
     {
       "id": "g--JowvBqM8",
@@ -282,7 +282,7 @@
       "uploadDate": "",
       "order": 19,
       "url": "https://www.youtube.com/watch?v=g--JowvBqM8",
-      "caption": null
+      "caption": "./captions/g--JowvBqM8.vtt"
     },
     {
       "id": "bizYea5i82k",

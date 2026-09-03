@@ -1,0 +1,1348 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.490
+Hello and welcome back to
+another episode with ItsDrDan.
+
+00:00:03.510 --> 00:00:07.110
+And today we're gonna be looking
+at molecular orbital theory.
+
+00:00:07.650 --> 00:00:12.240
+Now what molecular orbital theory is
+essentially an extension of the idea
+
+00:00:12.240 --> 00:00:17.310
+behind hybridization, where we get
+into a more realistic interpretation
+
+00:00:17.310 --> 00:00:18.870
+of how the atoms function.
+
+00:00:19.200 --> 00:00:21.150
+So this is an even more advanced method.
+
+00:00:21.600 --> 00:00:25.710
+So what MO theory does is essentially
+it's, it's describing the distribution
+
+00:00:25.740 --> 00:00:28.380
+of electrons between molecules.
+
+00:00:28.755 --> 00:00:32.415
+Now this is very similar to what
+we've always kind of imagined when
+
+00:00:32.415 --> 00:00:36.915
+we were talking about orbitals and
+electron configuration, where before
+
+00:00:36.915 --> 00:00:40.275
+we thought electrons were always
+surrounded by atoms, and we were able
+
+00:00:40.275 --> 00:00:42.945
+to describe that using atomic orbitals.
+
+00:00:43.425 --> 00:00:45.974
+Now, up until this point, we
+should know a few different things.
+
+00:00:45.974 --> 00:00:49.394
+Before kind of continuing with this
+video, uh, you should have really good
+
+00:00:49.394 --> 00:00:53.925
+knowledge of Lewis structures, electron
+pair geometry, molecular geometries,
+
+00:00:53.955 --> 00:00:56.235
+so everything that's vesper oriented.
+
+00:00:56.715 --> 00:00:59.625
+I would recommend knowing a little
+bit about Val Bond theory and
+
+00:00:59.625 --> 00:01:04.065
+hybridization in that viewpoint versus
+molecular orbital theory, which is
+
+00:01:04.065 --> 00:01:07.395
+a little bit of a different way of
+approaching the same type of problem.
+
+00:01:07.995 --> 00:01:10.605
+And we're gonna be trying to, we're
+gonna be explaining some bonding
+
+00:01:10.605 --> 00:01:12.315
+properties that have been seen before.
+
+00:01:12.945 --> 00:01:15.525
+So one thing is like, where
+does this kind of come up?
+
+00:01:15.525 --> 00:01:19.155
+Well, let's say if we start something
+small, let's say with oxygen.
+
+00:01:19.545 --> 00:01:22.335
+If you're to look at this
+molecule, well, oxygen seems
+
+00:01:22.335 --> 00:01:23.445
+to be something normal, right?
+
+00:01:23.445 --> 00:01:25.005
+We need it to be, to stay alive.
+
+00:01:25.545 --> 00:01:29.145
+If I were to actually kind of go
+through and draw the diagrams behind
+
+00:01:29.145 --> 00:01:33.945
+this, especially after looking at
+the entire concept of hybridization,
+
+00:01:34.395 --> 00:01:38.955
+well, first thing is if I were to
+kind of look at that, well, when these
+
+00:01:38.955 --> 00:01:42.585
+molecules bond together, they're gonna
+rearrange their electrons through
+
+00:01:42.585 --> 00:01:44.085
+a process known as hybridization.
+
+00:01:44.835 --> 00:01:49.785
+Which we've talked about, uh, previously,
+is the whole idea here is that we're
+
+00:01:49.785 --> 00:01:51.345
+gonna try to lower energy levels.
+
+00:01:51.765 --> 00:01:53.685
+So that way they can bond together.
+
+00:01:54.135 --> 00:01:58.065
+Now when this happens, well these
+different guys, they will, they
+
+00:01:58.065 --> 00:02:01.965
+will bond, they're gonna make a
+couple different bonds as a result.
+
+00:02:02.385 --> 00:02:07.065
+Meaning we'll have a Sigma single bond
+that's gonna form, but we also have
+
+00:02:07.065 --> 00:02:08.955
+that double bond two in the structure.
+
+00:02:09.465 --> 00:02:14.810
+So then we're gonna have this interaction
+between the parallel, uh, P orbitals on
+
+00:02:14.815 --> 00:02:17.685
+hybridized p orbitals to make a Pi bond.
+
+00:02:18.145 --> 00:02:21.390
+So sigma and Pi together
+make a double bond Now.
+
+00:02:21.390 --> 00:02:22.140
+That's great.
+
+00:02:22.140 --> 00:02:23.130
+That's what we learned all about.
+
+00:02:23.130 --> 00:02:24.060
+Balanced bond theory.
+
+00:02:24.660 --> 00:02:27.959
+The thing is, there's something
+that's still not able to be explained,
+
+00:02:28.260 --> 00:02:33.570
+which is essentially when you run
+oxygen as a liquid through a magnetic
+
+00:02:33.570 --> 00:02:36.510
+field, it shows magnetic properties.
+
+00:02:36.930 --> 00:02:40.739
+And one of the things as
+well, why would it do that?
+
+00:02:40.829 --> 00:02:42.299
+Why don't we show this?
+
+00:02:42.660 --> 00:02:45.660
+And let's say we're run two
+different molecules through a magnet.
+
+00:02:46.005 --> 00:02:49.725
+So what we have is a very cooled
+liquid nitrogen, and we're going
+
+00:02:49.725 --> 00:02:53.535
+to be pouring that through a magnet
+now as expected nitrogen gas.
+
+00:02:53.805 --> 00:02:57.675
+We see that it does not connect
+to the magnets on both sides of
+
+00:02:57.675 --> 00:02:59.625
+this, so there's nothing happening.
+
+00:03:00.045 --> 00:03:03.225
+The second that I put liquid
+oxygen over these magnets.
+
+00:03:03.495 --> 00:03:07.065
+Now, if we kinda look really closely,
+you see that it's fusing to the
+
+00:03:07.065 --> 00:03:09.405
+magnets, that it's sticking oxygen.
+
+00:03:09.405 --> 00:03:10.215
+That's magnetic.
+
+00:03:10.245 --> 00:03:10.695
+What?
+
+00:03:11.055 --> 00:03:14.355
+How come we don't see oxygen
+magnetizing to all the metals around us?
+
+00:03:14.835 --> 00:03:16.455
+How is that possible?
+
+00:03:16.695 --> 00:03:16.935
+Right?
+
+00:03:16.935 --> 00:03:20.235
+There's nothing that we kind of
+have to explain that at the moment.
+
+00:03:20.325 --> 00:03:24.105
+However, there was a concept we
+did mention not that long ago,
+
+00:03:24.405 --> 00:03:29.205
+which was all about the idea of
+param magnetism and DM magnetism.
+
+00:03:29.915 --> 00:03:31.385
+Para was all about that.
+
+00:03:31.385 --> 00:03:36.095
+Whenever molecules had unpaired electrons,
+they were attracted to electrons.
+
+00:03:36.605 --> 00:03:40.144
+However, looking at my diagram,
+especially once I have everything
+
+00:03:40.144 --> 00:03:44.435
+bonded, there are no unpaired
+electrons within the molecule itself.
+
+00:03:44.915 --> 00:03:48.095
+However, oxygen actually does
+have two unpaired electrons.
+
+00:03:48.155 --> 00:03:48.995
+Where are they?
+
+00:03:48.995 --> 00:03:49.805
+I don't see them.
+
+00:03:50.595 --> 00:03:53.805
+Anywhere in the hybridization
+picture that we've discussed.
+
+00:03:54.075 --> 00:03:57.885
+So this is a problem that means that
+hybridization is missing some kind
+
+00:03:57.885 --> 00:04:02.085
+of key component to it that is not
+actually able to describe everything.
+
+00:04:02.595 --> 00:04:05.805
+So we're gonna be comparing
+when something's paramagnetic
+
+00:04:05.985 --> 00:04:09.825
+or diamagnetic by learning about
+MO theory and when this works.
+
+00:04:10.200 --> 00:04:13.800
+So just as a reminder, diamagnetic was
+whenever you had all paired electrons,
+
+00:04:13.800 --> 00:04:15.810
+and that's what oxygen looks like.
+
+00:04:15.990 --> 00:04:19.380
+So where do these two unpaired
+electrons I claim are coming from?
+
+00:04:19.620 --> 00:04:21.060
+Let's dive into the theory.
+
+00:04:24.660 --> 00:04:27.720
+First thing is, is essentially
+trying to compare the different
+
+00:04:27.720 --> 00:04:31.020
+theories that we've been talking
+about in terms of general chemistry.
+
+00:04:31.410 --> 00:04:33.990
+The first one that everybody
+learns about is valence bond
+
+00:04:33.990 --> 00:04:35.475
+theory, which is hybridization.
+
+00:04:36.195 --> 00:04:39.554
+Let's talk about that first, and then
+we'll go into what the differences
+
+00:04:39.554 --> 00:04:41.174
+are with molecular orbital theory.
+
+00:04:41.835 --> 00:04:45.195
+So when we talked about hybridization,
+the entire idea with this one is
+
+00:04:45.195 --> 00:04:51.135
+essentially considered electrons localized
+in bonds between individual atoms.
+
+00:04:51.645 --> 00:04:55.960
+Whenever these bonds were created, it
+was mainly due to overlap of different
+
+00:04:55.960 --> 00:04:58.635
+atomic orbitals and hybrid orbitals.
+
+00:04:58.965 --> 00:05:03.044
+When this happened, essentially whenever
+you had a overlap of hybrid with atomic
+
+00:05:03.075 --> 00:05:04.995
+or hybrid and hybrid, we made sigma bonds.
+
+00:05:05.340 --> 00:05:08.910
+Whenever it was the atomic orbitals
+interacting with each other, we
+
+00:05:08.910 --> 00:05:10.410
+had PI bonds that were making.
+
+00:05:11.130 --> 00:05:11.850
+Now, why is that?
+
+00:05:11.850 --> 00:05:15.510
+Something that was great is that it
+gave us the ability to actually explain
+
+00:05:15.510 --> 00:05:18.570
+the why for how vesper structures work.
+
+00:05:18.960 --> 00:05:23.820
+Meaning it predicts molecular shape by
+determining where most likely the regions
+
+00:05:23.880 --> 00:05:27.180
+of electron density are a K steric number.
+
+00:05:27.420 --> 00:05:29.790
+So it gives us a good thought process.
+
+00:05:30.225 --> 00:05:33.645
+One downfall to this is that it
+essentially says that electrons are
+
+00:05:33.645 --> 00:05:35.505
+localized, meaning they're in one spot.
+
+00:05:35.685 --> 00:05:39.645
+So we need a ton of structure to
+describe resonance, which the whole
+
+00:05:39.645 --> 00:05:43.485
+idea of resonance is that multiple
+structures exist all at the same time.
+
+00:05:43.845 --> 00:05:48.495
+Bond order changes as a result, so it
+doesn't really do its best in explaining.
+
+00:05:49.050 --> 00:05:52.110
+All pictures, especially being that
+resonance is a big part of how our
+
+00:05:52.110 --> 00:05:55.140
+body functions, especially if you kind
+of think of it in terms of like the
+
+00:05:55.140 --> 00:05:59.310
+peptide bonds and for a lot of different
+structures that we see in time in terms
+
+00:05:59.310 --> 00:06:00.810
+of like the pharmaceutical industry.
+
+00:06:01.500 --> 00:06:04.470
+So when we're comparing this,
+so let's say molecular orbital
+
+00:06:04.470 --> 00:06:06.390
+theory, well what's the difference?
+
+00:06:06.390 --> 00:06:09.060
+Well, this theory kind
+of tweaks that process.
+
+00:06:09.825 --> 00:06:14.235
+What if instead I say, okay, let's
+say the electrons are delocalized
+
+00:06:14.295 --> 00:06:18.405
+throughout the molecule, whereas
+all of the atomic orbitals are
+
+00:06:18.405 --> 00:06:20.835
+working together all at one time.
+
+00:06:21.195 --> 00:06:24.555
+So when that happens, the atomic
+orbitals are gonna instead
+
+00:06:24.885 --> 00:06:26.535
+create molecular orbitals.
+
+00:06:26.805 --> 00:06:30.945
+So if I have multiple atoms all in this
+molecule, they're all working together
+
+00:06:31.215 --> 00:06:34.245
+to create a, an entirely new orbital.
+
+00:06:34.785 --> 00:06:38.445
+So valance bond theory was all
+about one single atom hybridizing.
+
+00:06:39.300 --> 00:06:43.349
+Moleculars, the whole molecule is
+changing to make different orbitals.
+
+00:06:43.740 --> 00:06:48.240
+Now, when this happens, the or, those
+atomic orbitals are going to interact.
+
+00:06:48.570 --> 00:06:53.669
+To make what we call bonding and
+anti-bonding interactions, which
+
+00:06:53.669 --> 00:06:56.700
+are gonna be different types of
+orbitals that are gonna be forming.
+
+00:06:57.210 --> 00:07:00.060
+Now, what this is gonna be
+used for is to help us predict
+
+00:07:00.120 --> 00:07:02.070
+the arrangements of electrons.
+
+00:07:02.430 --> 00:07:06.510
+So not just the structure, but exactly
+where are, where's the probability
+
+00:07:06.510 --> 00:07:10.440
+of these electrons being located when
+we try to think of quantum mechanics.
+
+00:07:10.440 --> 00:07:13.349
+So it's gonna give us a, uh,
+essentially us assuming where
+
+00:07:13.349 --> 00:07:14.820
+the lowest energy possibility is.
+
+00:07:15.300 --> 00:07:18.180
+So that way we can get an idea of
+what the orbital picture looks like,
+
+00:07:18.180 --> 00:07:22.860
+so we can know how a molecule truly
+behaves on the electronic level.
+
+00:07:23.280 --> 00:07:25.020
+So let's take a look at both of these.
+
+00:07:25.050 --> 00:07:28.650
+So the first thing when we get to MO
+theory is that the whole idea behind
+
+00:07:28.650 --> 00:07:32.850
+this is that we need to calculate
+the orbitals for the entire molecule.
+
+00:07:33.150 --> 00:07:37.230
+But don't worry, there's no math at this
+one for at least for general chemistry.
+
+00:07:37.604 --> 00:07:41.054
+This is something that's generally
+reserved for research in institutes
+
+00:07:41.054 --> 00:07:45.435
+or very high level graduate students
+who are trying to, you know, hit
+
+00:07:45.435 --> 00:07:48.224
+their head against the wall a little
+bit to understand all the basics.
+
+00:07:48.435 --> 00:07:50.955
+It can be some done in general
+chemistry, but usually it's on
+
+00:07:50.955 --> 00:07:52.455
+a very, very simplistic level.
+
+00:07:52.995 --> 00:07:54.344
+So where does this all come from?
+
+00:07:54.344 --> 00:07:57.075
+Well, it's whole idea is that
+if you, what we're trying to do
+
+00:07:57.075 --> 00:07:58.784
+is solve the Stroger equation.
+
+00:07:59.340 --> 00:08:01.590
+And the thing is with that
+is that it's actually pretty
+
+00:08:01.590 --> 00:08:02.820
+much impossible to solve it.
+
+00:08:02.849 --> 00:08:03.479
+Exactly.
+
+00:08:03.960 --> 00:08:07.620
+Alls we can do is try to make an
+approximation because the electrons are
+
+00:08:07.620 --> 00:08:11.760
+moving so fast, it's, it's, there's too
+much uncertainty for us to know exactly
+
+00:08:11.760 --> 00:08:13.289
+where they located at a given time.
+
+00:08:13.830 --> 00:08:17.159
+So when we're trying to look at this
+thing, we can approximate what the
+
+00:08:17.159 --> 00:08:21.690
+wave function is, meaning we can try to
+figure out an idea of what the shape is
+
+00:08:21.690 --> 00:08:23.250
+or where the electrons most likely are.
+
+00:08:23.985 --> 00:08:27.885
+So what is this kind of analogous
+to here is that electrons around
+
+00:08:27.885 --> 00:08:31.605
+these atoms are limited to
+discrete quantized energy levels.
+
+00:08:31.935 --> 00:08:34.875
+So it's a, it's the same kind of
+idea in the mo molecular picture too.
+
+00:08:35.445 --> 00:08:38.895
+The only difference is that, well,
+once we kind of assume that all these
+
+00:08:38.895 --> 00:08:40.875
+atomic orbitals are working together.
+
+00:08:41.355 --> 00:08:45.405
+Is that we can actually figure out where
+the electrons are most likely located in
+
+00:08:45.405 --> 00:08:48.225
+the mul, a molecular orbital between this.
+
+00:08:48.585 --> 00:08:52.515
+So if we square a wave function, we can
+figure out the probability and plot it
+
+00:08:52.785 --> 00:08:54.525
+of most likely where these things are.
+
+00:08:55.155 --> 00:08:58.695
+Keep in mind when we're doing this,
+it's gonna be very similar to electron
+
+00:08:58.695 --> 00:09:02.955
+configuration, meaning it's still gonna
+follow the poly exclusion principle.
+
+00:09:03.405 --> 00:09:07.185
+The off bowel principle where we start
+with lowest energy first and fill up
+
+00:09:07.725 --> 00:09:12.015
+and we'll still do our, um, huns roll
+where we do degenerate orbitals as well.
+
+00:09:12.465 --> 00:09:15.435
+So it's almost the exact same
+thing as what we've been doing
+
+00:09:15.435 --> 00:09:18.585
+before, but just some different
+symbols with sigma and Pi bonds.
+
+00:09:19.005 --> 00:09:20.415
+So let's dive a little farther.
+
+00:09:20.745 --> 00:09:23.205
+The first thing is, is
+where's all this coming from?
+
+00:09:23.265 --> 00:09:26.955
+So whenever we're looking at these,
+it's all talking about what we call the
+
+00:09:26.955 --> 00:09:29.775
+linear combination of atomic orbitals.
+
+00:09:30.435 --> 00:09:34.080
+L-C-A-O for short, which
+is a more common acronym.
+
+00:09:34.740 --> 00:09:39.300
+So whenever we talk about this, in a
+sense, it's just adding up all the,
+
+00:09:39.300 --> 00:09:44.070
+or the atomic orbitals together to
+create the all the molecular orbitals.
+
+00:09:44.490 --> 00:09:48.180
+So say for example, if I have two atomic
+orbitals going in, I'm going to end up
+
+00:09:48.180 --> 00:09:50.460
+having two molecular orbitals coming out.
+
+00:09:51.120 --> 00:09:55.800
+Now the difference between valance bond
+theory was, is that valance bond theory
+
+00:09:55.860 --> 00:09:59.220
+only combined the orbitals of one atom.
+
+00:09:59.685 --> 00:10:03.135
+This is talking about two or
+three or four combining together
+
+00:10:03.135 --> 00:10:04.334
+to make a giant molecule.
+
+00:10:04.724 --> 00:10:07.485
+In our case, we're just gonna stick
+with two just to make it easy.
+
+00:10:07.485 --> 00:10:08.745
+'cause we're, we're beginners.
+
+00:10:08.745 --> 00:10:08.985
+Right?
+
+00:10:08.985 --> 00:10:10.425
+We're just starting off to understand.
+
+00:10:11.055 --> 00:10:14.625
+So the whole idea of where this comes from
+is actually based on how waves worked.
+
+00:10:15.045 --> 00:10:19.425
+So if you kind of thought of a wave, well,
+if they were in the phase with each other,
+
+00:10:19.454 --> 00:10:24.375
+so both starting at the exact same point
+like I have here on the left hand side,
+
+00:10:24.885 --> 00:10:27.495
+they would construct or add up together.
+
+00:10:28.110 --> 00:10:31.650
+Or if I had them slightly out of
+phase with one another, where one of
+
+00:10:31.650 --> 00:10:35.219
+'em is down, the other one's up, they
+will deconstruct with one another.
+
+00:10:35.699 --> 00:10:39.449
+So with the same idea here,
+orbitals do the same thing.
+
+00:10:39.900 --> 00:10:44.610
+Orbitals can be in phase or they can
+also be out of phase, and it's all
+
+00:10:44.610 --> 00:10:48.120
+based on where the electron is located
+in a given part of that orbital.
+
+00:10:48.120 --> 00:10:49.860
+So if it's in one region, it's in phase.
+
+00:10:50.069 --> 00:10:51.870
+If it's in another region,
+it's more out of phase.
+
+00:10:52.170 --> 00:10:55.740
+So there's different areas where most
+likely it's going to be at one time.
+
+00:10:55.740 --> 00:10:55.920
+Right.
+
+00:10:55.920 --> 00:10:57.060
+It's almost like a coin flip.
+
+00:10:57.690 --> 00:11:01.080
+So when we're trying to try to
+figure out where exactly is it?
+
+00:11:01.110 --> 00:11:06.120
+Well, as a result of this is we can
+create two different types of orbitals
+
+00:11:06.690 --> 00:11:09.450
+every time two atomic orbitals interact.
+
+00:11:09.450 --> 00:11:12.930
+So remember two atomic orbitals, we're
+gonna get two molecular orbitals.
+
+00:11:13.590 --> 00:11:18.330
+So every time, let's say you have s and
+s interact, what you're gonna get is one
+
+00:11:18.330 --> 00:11:23.550
+orbital is going to be a bonding orbital,
+and the other one's gonna be anti-bonding.
+
+00:11:24.090 --> 00:11:25.380
+Now, what's the difference?
+
+00:11:25.380 --> 00:11:27.000
+Does that mean one doesn't even interact?
+
+00:11:27.120 --> 00:11:28.110
+Not entirely.
+
+00:11:28.110 --> 00:11:32.310
+It's just a more of a vernacular word
+that's being chose by the community.
+
+00:11:32.910 --> 00:11:36.180
+So the whole idea here was whenever
+we have bonding, is that this is the
+
+00:11:36.180 --> 00:11:39.540
+lower energy orbital, meaning that
+it's gonna have the two nucleon.
+
+00:11:39.960 --> 00:11:42.690
+They're gonna be interacting together
+and it's essentially like making
+
+00:11:42.690 --> 00:11:47.370
+a sigma bond or a Pi bond that's
+interacting directly with that.
+
+00:11:47.370 --> 00:11:50.490
+It's gonna have a lot more electron
+density, it's gonna be lower energy.
+
+00:11:50.520 --> 00:11:51.570
+Very, very stable.
+
+00:11:52.290 --> 00:11:56.010
+Whereas whenever we have
+anti-bonding, well this is one that
+
+00:11:56.430 --> 00:11:57.660
+is a little bit higher in energy.
+
+00:11:57.660 --> 00:11:59.069
+It's a little more unstable.
+
+00:11:59.069 --> 00:12:02.969
+It's actually kind of working against
+the nuclei being in the ultimate place.
+
+00:12:02.969 --> 00:12:06.089
+So it's kind of like a checks
+and balance type of system.
+
+00:12:06.089 --> 00:12:07.619
+It's like one of 'em
+is working really well.
+
+00:12:07.920 --> 00:12:11.520
+The other one tends to work a little bit
+outta character, a little outta sync.
+
+00:12:11.520 --> 00:12:12.989
+So it's destabilize it.
+
+00:12:13.439 --> 00:12:14.849
+So it's a give intake, right?
+
+00:12:14.849 --> 00:12:17.819
+You can't just have a million bonds
+form in between the two atoms.
+
+00:12:18.150 --> 00:12:20.250
+It's a low energy and a high energy.
+
+00:12:20.730 --> 00:12:23.490
+So what does this look
+like in terms of a picture?
+
+00:12:24.300 --> 00:12:28.890
+Well, if we're talking about two
+different nuclei, so let's say I have
+
+00:12:28.980 --> 00:12:35.010
+atom one on my left, and then atom two
+in green, so purple and green here.
+
+00:12:35.520 --> 00:12:38.825
+So both of them have an S orbital
+that are interacting with each other.
+
+00:12:39.540 --> 00:12:41.370
+What exactly is gonna happen?
+
+00:12:41.745 --> 00:12:46.455
+When they interact well, if they're
+both interacting on this axis for
+
+00:12:46.455 --> 00:12:52.815
+the nuclei, ir one orbital is going
+to end up adding together, right?
+
+00:12:52.815 --> 00:12:58.065
+So creating our sigma bond in the bonding
+orbital, and then being that if we
+
+00:12:58.065 --> 00:13:02.715
+started with two atomic orbitals, well
+we must have another orbital as well.
+
+00:13:03.255 --> 00:13:06.555
+So we're also gonna create an
+anti-bonding orbital where they're
+
+00:13:06.585 --> 00:13:08.055
+out of phase with each other.
+
+00:13:08.685 --> 00:13:10.635
+So we're always gonna have two going in.
+
+00:13:11.010 --> 00:13:12.390
+Then we'll have two coming out.
+
+00:13:12.390 --> 00:13:15.240
+So we have a higher energy,
+the anti-bonding, and then
+
+00:13:15.240 --> 00:13:16.710
+the lower energy bonding.
+
+00:13:17.370 --> 00:13:19.620
+Now with this, right, we
+can see they're both sigma.
+
+00:13:19.740 --> 00:13:21.930
+So Sigma S, 'cause we're
+talking about the S orbital.
+
+00:13:22.500 --> 00:13:25.110
+The way that we tell the
+difference is sigma without,
+
+00:13:25.110 --> 00:13:26.580
+with a star and without a star.
+
+00:13:27.120 --> 00:13:29.880
+So when it has a star next to
+it, that means anti-bonding.
+
+00:13:29.880 --> 00:13:33.300
+It's really high energy where
+wherever we have it, without one
+
+00:13:33.300 --> 00:13:34.410
+that's telling you it's bonding.
+
+00:13:35.010 --> 00:13:38.580
+And this can happen with different
+orbitals as well, not just s. So
+
+00:13:38.580 --> 00:13:39.810
+we can go a little bit farther.
+
+00:13:40.200 --> 00:13:42.960
+We can do it with p orbitals
+too, because they can also
+
+00:13:42.960 --> 00:13:45.030
+interact on the same axis too.
+
+00:13:45.630 --> 00:13:49.320
+So let's say if we're think of the
+same thing, well, if I have PX and PX
+
+00:13:49.320 --> 00:13:53.790
+going together, so two atomic orbitals,
+well, how many molecular orbitals
+
+00:13:53.790 --> 00:13:54.780
+do you think are gonna come out?
+
+00:13:54.900 --> 00:13:56.820
+And if you guess the
+right, it's gonna be two.
+
+00:13:56.880 --> 00:13:57.150
+Right?
+
+00:13:57.150 --> 00:14:00.630
+So once again, we're gonna have
+a bonding and an anti-bonding.
+
+00:14:00.930 --> 00:14:04.710
+So when they're head to head or
+overlapping, just like hybridization.
+
+00:14:05.040 --> 00:14:06.870
+That's when we make the sigma bonds.
+
+00:14:07.140 --> 00:14:09.449
+So the way to kind of tell when it's
+bonding, you can kind of see the
+
+00:14:09.449 --> 00:14:13.020
+over the overlap between the orbital,
+like right in the middle here.
+
+00:14:13.350 --> 00:14:16.920
+We can see all that really connecting
+with each other, where whenever the
+
+00:14:16.920 --> 00:14:21.360
+orbitals ended up being out of phase, they
+end up not matching in terms of color.
+
+00:14:21.360 --> 00:14:26.280
+They can't actually create a, a
+stable bond, so it's very high energy.
+
+00:14:26.775 --> 00:14:27.855
+Let's see what other types we had.
+
+00:14:27.855 --> 00:14:29.745
+So we had sigma, we also had pi.
+
+00:14:30.105 --> 00:14:30.765
+Let's look at the other.
+
+00:14:30.945 --> 00:14:33.675
+But whenever we had PI bonds, the
+whole thing about these is that
+
+00:14:33.675 --> 00:14:36.765
+they had to be parallel with one
+another, so facing each other.
+
+00:14:37.215 --> 00:14:41.475
+So when we had that parallel orbital
+connecting, well, once again, let's say if
+
+00:14:41.475 --> 00:14:45.855
+I were to look at the PY and PY together
+at the top two orbitals are going in.
+
+00:14:46.095 --> 00:14:47.055
+How many need to come out?
+
+00:14:47.265 --> 00:14:47.925
+It's gonna be two.
+
+00:14:48.540 --> 00:14:49.800
+Same thing with pz, right?
+
+00:14:49.800 --> 00:14:53.849
+They're both in line with each other, or
+sorry, it's more in line this way, right?
+
+00:14:53.849 --> 00:14:56.790
+We can see them together, so it's
+gonna be the same general idea.
+
+00:14:56.790 --> 00:14:57.479
+So let's look.
+
+00:14:57.479 --> 00:15:01.650
+So with these, right, they each
+make two sets of different orbitals.
+
+00:15:02.099 --> 00:15:05.729
+So we can see like one, almost looks
+like a butterfly with alternating wings.
+
+00:15:06.105 --> 00:15:09.615
+Then the other two, when they
+overlap and merge together, it helps
+
+00:15:09.615 --> 00:15:13.845
+create that delocalized Pi bond that
+goes between two individual atoms.
+
+00:15:14.295 --> 00:15:16.005
+So just to kind of like think about that.
+
+00:15:16.005 --> 00:15:17.385
+Well, where are the atoms?
+
+00:15:17.385 --> 00:15:20.084
+Well, let's say if the atom would
+be like kind of right in the
+
+00:15:20.084 --> 00:15:21.915
+middle of each of these orbitals.
+
+00:15:21.915 --> 00:15:23.475
+So where I'm putting these red dots.
+
+00:15:23.475 --> 00:15:28.454
+So it'd be like where the nuclei are
+in are in reference to one another.
+
+00:15:28.920 --> 00:15:32.820
+So it's all about like kinda where, where
+are they in the different structures?
+
+00:15:32.820 --> 00:15:36.450
+We're always gonna have two
+individual orbitals making two others.
+
+00:15:36.900 --> 00:15:39.990
+So let's go through some examples of when
+this is possible, because I'm sure by
+
+00:15:39.990 --> 00:15:42.060
+now it's a little confusing to follow.
+
+00:15:42.300 --> 00:15:44.280
+When can we make each one
+of these different orbitals?
+
+00:15:44.550 --> 00:15:46.800
+The whole idea here is
+when we're looking at them.
+
+00:15:46.800 --> 00:15:49.500
+So if you're given a pair of orbitals,
+you're just trying to figure out,
+
+00:15:49.500 --> 00:15:51.690
+well, can they form and can they not?
+
+00:15:51.720 --> 00:15:54.360
+Well, what could we make,
+if you remember right?
+
+00:15:54.420 --> 00:15:55.440
+Well, we had sigma.
+
+00:15:56.175 --> 00:15:58.094
+PI right from hybridization.
+
+00:15:58.094 --> 00:16:02.564
+So Sigma was all about overlap,
+and PI was about being parallel.
+
+00:16:03.194 --> 00:16:06.939
+Now, the only difference here, it's,
+well, what kind of orbital can it make?
+
+00:16:07.574 --> 00:16:12.645
+Can it be sigma bonding, Pi
+bonding with or, or anti-bonding?
+
+00:16:12.944 --> 00:16:17.115
+Or maybe it's even possible where it
+doesn't make a bond at all, right?
+
+00:16:17.115 --> 00:16:20.145
+So if it doesn't fit either
+definitions, that's possible too.
+
+00:16:20.775 --> 00:16:24.015
+So let's say if I were to look at
+this first one, some, I'm adding
+
+00:16:24.015 --> 00:16:26.685
+together two three PX orbitals.
+
+00:16:27.180 --> 00:16:31.110
+So we see them over here on the left
+hand side, and the whole idea here
+
+00:16:31.110 --> 00:16:33.210
+as well, they're facing each other.
+
+00:16:33.210 --> 00:16:34.470
+So it says facing only.
+
+00:16:35.130 --> 00:16:37.650
+So being that they're facing each
+other, these two orbitals are going
+
+00:16:37.650 --> 00:16:41.310
+to come together and we can see
+that they're adding together, right?
+
+00:16:41.310 --> 00:16:43.440
+They have the exact same
+color as one another.
+
+00:16:43.830 --> 00:16:46.140
+So what type of orbital do you
+think they're gonna be being that
+
+00:16:46.140 --> 00:16:47.520
+they're gonna be overlapping?
+
+00:16:48.060 --> 00:16:50.400
+Well, the first thing is, is, well,
+it's definitely gonna be Sigma.
+
+00:16:51.030 --> 00:16:52.740
+Is it bonding or anti-bonding?
+
+00:16:53.130 --> 00:16:56.790
+Well, it's gonna end up forming
+one where they have a ton of
+
+00:16:56.790 --> 00:16:58.290
+overlap as a result, right?
+
+00:16:58.830 --> 00:17:02.610
+So being that they have that
+overlap, how can we label that?
+
+00:17:03.150 --> 00:17:04.950
+Well, that's going to be a Sigma Bond.
+
+00:17:05.400 --> 00:17:10.319
+And to be more specific, we could say,
+Hey, that Sigma three PX being that
+
+00:17:10.319 --> 00:17:14.400
+they were the ones that were forming
+that individual orbital that are there.
+
+00:17:14.400 --> 00:17:16.589
+So we can, we can put that in our details.
+
+00:17:17.430 --> 00:17:19.829
+Now for the next one, it says, we have px.
+
+00:17:20.204 --> 00:17:22.395
+And PY coming together.
+
+00:17:22.845 --> 00:17:24.405
+So how about this one?
+
+00:17:24.405 --> 00:17:28.905
+Well, if I've tried to overlap
+them with the side, well before,
+
+00:17:28.905 --> 00:17:32.145
+whenever we talked about overlap,
+they were always on the same axis,
+
+00:17:32.655 --> 00:17:35.625
+and PI was always on parallel AEs.
+
+00:17:36.135 --> 00:17:39.855
+So it doesn't really match
+either of our definitions.
+
+00:17:39.855 --> 00:17:41.625
+So what's gonna happen here?
+
+00:17:42.225 --> 00:17:45.405
+This is when we're gonna make no
+bond, being that it doesn't match
+
+00:17:45.405 --> 00:17:47.895
+them on the same or parallel.
+
+00:17:47.895 --> 00:17:49.065
+So it's either together.
+
+00:17:49.425 --> 00:17:51.285
+Or take or tear it together, right?
+
+00:17:51.285 --> 00:17:52.275
+It's one or the other.
+
+00:17:52.995 --> 00:17:53.925
+So what about this one?
+
+00:17:54.705 --> 00:17:57.045
+So this last one, okay,
+they're both parallel.
+
+00:17:57.255 --> 00:17:58.425
+So what does that tell us?
+
+00:17:58.965 --> 00:18:00.285
+Well, it's definitely Pi.
+
+00:18:00.825 --> 00:18:02.775
+Are they in phase with one another?
+
+00:18:02.775 --> 00:18:05.985
+Well, if we look at the colors, we can
+see that they're opposite of one another.
+
+00:18:06.315 --> 00:18:07.605
+So what does that mean?
+
+00:18:07.605 --> 00:18:10.575
+Is that they're gonna be out
+of phase with one another.
+
+00:18:10.965 --> 00:18:16.035
+So what should this make is it should
+be PI three PY based on the original
+
+00:18:16.035 --> 00:18:17.415
+orbitals we were starting with.
+
+00:18:17.865 --> 00:18:21.165
+So if we were to try to draw that
+the best we can, we should see those
+
+00:18:21.165 --> 00:18:23.835
+butterfly wings that we had previously.
+
+00:18:24.285 --> 00:18:27.285
+And this is usually information that
+you're always given is what orbitals
+
+00:18:27.285 --> 00:18:30.885
+you're starting with and you try to
+predict, okay, well which one is it?
+
+00:18:30.885 --> 00:18:33.765
+Or you're just filling in the different
+or different orbitals as well.
+
+00:18:34.215 --> 00:18:37.305
+So this is kind of one of those ideas
+of just how does this whole thing work?
+
+00:18:37.635 --> 00:18:40.125
+So this is the theory
+behind it or the basic idea.
+
+00:18:40.125 --> 00:18:42.135
+So where exactly can we apply this?
+
+00:18:42.675 --> 00:18:47.055
+Well, the whole concept with this thing
+is that we usually will fill in molecular
+
+00:18:47.055 --> 00:18:52.425
+orbital diagrams to show this meaning
+that we're going to be trying to see how
+
+00:18:52.425 --> 00:18:55.605
+are all the different electrons gonna
+be filling in, starting at the lowest,
+
+00:18:55.665 --> 00:18:59.955
+using the alpha bowel principle, and
+then filling it all the way up, um,
+
+00:19:00.015 --> 00:19:02.295
+to, to whatever the highest levels are.
+
+00:19:02.355 --> 00:19:06.255
+And that's where we can get the param
+magnetism and dia magnetism that
+
+00:19:06.255 --> 00:19:07.905
+we've seen in the video from before.
+
+00:19:08.355 --> 00:19:10.665
+So that's where the second
+part video is gonna come in.
+
+00:19:11.115 --> 00:19:15.015
+Where it's gonna go to, how to fill
+in, uh, molecular orbital diagrams.
+
+00:19:15.405 --> 00:19:18.675
+So that will be the, the next video to try
+to cut this up a little bit for everybody.
+
+00:19:18.885 --> 00:19:22.605
+Uh, alright, let's thank you so much
+for listening and I'll see you guys
+
+00:19:22.605 --> 00:19:27.015
+in the next video for the molecular
+orbital diagrams, which will go mainly
+
+00:19:27.015 --> 00:19:28.905
+through practice problems and examples.
+
+00:19:29.235 --> 00:19:30.075
+Okay, see you y'all soon.
+
+00:19:30.555 --> 00:19:30.855
+Bye.
+
