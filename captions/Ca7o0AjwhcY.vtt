@@ -1,0 +1,1195 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.180 --> 00:00:04.000
+Hello and welcome back to another video
+with ItsDrDan and today we're going to
+
+00:00:04.000 --> 00:00:08.820
+be learning about acid base titrations
+and specifically we're going to learn
+
+00:00:08.830 --> 00:00:15.169
+all about how to find the concentration
+of a, of these different solutions when
+
+00:00:15.170 --> 00:00:16.949
+you are trying to mix them together.
+
+00:00:17.520 --> 00:00:21.269
+Now with these, the whole idea here,
+what we're trying to figure out with
+
+00:00:21.270 --> 00:00:23.450
+concentration is we are doing molarity.
+
+00:00:24.050 --> 00:00:26.440
+So what exactly is a titration?
+
+00:00:26.450 --> 00:00:27.770
+Let's start with the basics.
+
+00:00:28.210 --> 00:00:32.189
+So generally what it is, is whenever
+you have, let's say a burette, which is
+
+00:00:32.189 --> 00:00:36.239
+this long piece of glassware over here,
+that's a very accurate piece of glassware.
+
+00:00:36.760 --> 00:00:41.690
+And you're trying to control how
+much solution you are reacting,
+
+00:00:41.690 --> 00:00:43.880
+let's say with another vessel.
+
+00:00:43.890 --> 00:00:48.489
+So in this case, I have an acid with an
+indicator in this Erlenmeyer flask and
+
+00:00:48.489 --> 00:00:52.330
+a base up in this, uh, burette up here.
+
+00:00:52.890 --> 00:00:56.650
+Now, one thing that what, what
+exactly are we using this for?
+
+00:00:56.960 --> 00:01:01.290
+Well, it's generally used to
+determine the unknown concentration
+
+00:01:01.610 --> 00:01:06.369
+by reacting a precise volume of
+solution, such as an acid in this
+
+00:01:06.370 --> 00:01:12.520
+situation, with a precise volume of
+another solution, such as a base.
+
+00:01:12.989 --> 00:01:15.879
+Now the thing that's different
+is the other solution, you
+
+00:01:15.900 --> 00:01:17.439
+know the concentration.
+
+00:01:17.859 --> 00:01:20.549
+So one of them is unknown
+and the other is known.
+
+00:01:21.019 --> 00:01:25.400
+And the whole idea here is you're
+trying to figure out the exact point.
+
+00:01:25.705 --> 00:01:27.725
+where they neutralize each other.
+
+00:01:28.085 --> 00:01:32.245
+So that way you can get ideas of maybe
+what the equivalence point is, when the
+
+00:01:32.255 --> 00:01:37.164
+concentrations are equal to each other,
+how exactly the acid and base behaves.
+
+00:01:37.434 --> 00:01:41.275
+It gives you ideas about concepts
+known as equilibrium, about pH,
+
+00:01:41.744 --> 00:01:45.665
+how exactly a buffer could work,
+which is another acid base concept.
+
+00:01:46.035 --> 00:01:51.635
+is a very widely used concept that
+is used very regularly in chemistry,
+
+00:01:51.905 --> 00:01:55.994
+in the health sciences, and biology,
+um, where we're really trying to
+
+00:01:55.995 --> 00:01:59.325
+focus on acid base neutralization.
+
+00:01:59.865 --> 00:02:04.045
+Now, what exactly does this refer to,
+just to kind of as a little reminder,
+
+00:02:04.584 --> 00:02:09.475
+is acid base neutralization is a double
+replacement reaction, so it's a subtype.
+
+00:02:09.880 --> 00:02:13.320
+Now, specifically neutralize
+means that we're taking out the
+
+00:02:13.330 --> 00:02:17.040
+acid in the base characteristics,
+which are extremely dangerous.
+
+00:02:17.530 --> 00:02:22.609
+Now how do we take them out is
+we can make salt and water as a
+
+00:02:22.650 --> 00:02:24.970
+product to help take those out.
+
+00:02:25.649 --> 00:02:30.484
+Okay, so we're measuring essentially
+the loss of acid, the loss of base.
+
+00:02:30.815 --> 00:02:36.515
+So, whenever we're looking at these,
+acids always have H as its main
+
+00:02:36.515 --> 00:02:42.874
+characteristic, and bases always have
+OH so when we add these two together,
+
+00:02:42.904 --> 00:02:46.534
+we're always going to be making a
+happy water molecule as a result.
+
+00:02:46.965 --> 00:02:50.404
+So, let's take a look at a little bit
+more about the vocabulary behind this
+
+00:02:50.404 --> 00:02:52.255
+before we solve a couple problems.
+
+00:02:57.805 --> 00:03:00.475
+The biggest component here is
+that we are going to be doing
+
+00:03:00.475 --> 00:03:02.005
+something like this in the lab.
+
+00:03:02.385 --> 00:03:05.475
+Meaning that we'll need a couple
+important piece of a piece
+
+00:03:05.475 --> 00:03:07.184
+of glassware available to us.
+
+00:03:07.445 --> 00:03:11.144
+So typically we're always using
+a burette and a flask together.
+
+00:03:11.504 --> 00:03:15.135
+Now the reason we use a burette is
+that we can actually very accurately
+
+00:03:15.135 --> 00:03:19.354
+control this flow knob here to
+be able to flow out liquid at a
+
+00:03:19.354 --> 00:03:21.415
+very, at any rate that you choose.
+
+00:03:21.415 --> 00:03:25.125
+Whether it's really slow, very
+fast, but it's very precise.
+
+00:03:25.135 --> 00:03:27.885
+It goes to a very high
+number of decimal places.
+
+00:03:28.190 --> 00:03:31.280
+It's one of the more accurate and
+precise piece of glassware that
+
+00:03:31.280 --> 00:03:33.060
+you, that we have at our disposal.
+
+00:03:33.705 --> 00:03:37.415
+Uh, the other thing that we'll use is
+an indicator, which is commonly used
+
+00:03:37.415 --> 00:03:41.835
+in biology and chemistry to denote
+when a chemical reaction occurs.
+
+00:03:42.235 --> 00:03:45.415
+So what an indicator does is
+that, well, it indicates when
+
+00:03:45.415 --> 00:03:47.495
+this happens via a color change.
+
+00:03:47.784 --> 00:03:51.205
+So it's something that you can
+perceive easily in the lab without
+
+00:03:51.235 --> 00:03:52.794
+needing any fancy equipment.
+
+00:03:53.270 --> 00:03:56.680
+Typically, it takes advantage
+of pH changes or maybe if a
+
+00:03:56.740 --> 00:03:58.440
+particular product is formed.
+
+00:03:58.800 --> 00:04:01.940
+So that way you can actually
+tell like, Oh, this happened.
+
+00:04:01.950 --> 00:04:06.759
+It's very readily used in microbiology
+as well as in chemistry and even
+
+00:04:06.759 --> 00:04:11.090
+sometimes in physiology to determine
+different macro molecules as well.
+
+00:04:11.660 --> 00:04:15.620
+So when we are using these, the whole
+idea here is being that we have, let's say
+
+00:04:15.670 --> 00:04:21.410
+HCL, which is on the left hand side, and
+we don't know what its concentration is.
+
+00:04:21.795 --> 00:04:26.825
+Well, we can essentially figure
+that out with a very specific, uh,
+
+00:04:27.065 --> 00:04:29.725
+concentration of base, which we have 0.
+
+00:04:29.785 --> 00:04:33.395
+100 molar base on the right of that.
+
+00:04:33.954 --> 00:04:37.675
+So when we're using those, we
+will add those two together.
+
+00:04:37.945 --> 00:04:42.955
+And the whole idea is we are going
+to be adding base very, very slowly.
+
+00:04:43.325 --> 00:04:48.555
+Now as the pH changes, which we'll
+talk about in future videos, eventually
+
+00:04:48.575 --> 00:04:52.294
+this indicator is going to change
+colors when the pH reaches zero.
+
+00:04:52.650 --> 00:04:53.850
+that neutralization.
+
+00:04:54.430 --> 00:04:58.880
+Now when we add bass very slowly what's
+happening is remember H plus and OH
+
+00:04:59.130 --> 00:05:00.540
+minus are combining to make water.
+
+00:05:01.350 --> 00:05:04.480
+And the H plus is going to
+keep decreasing, decreasing,
+
+00:05:04.480 --> 00:05:06.000
+decreasing as we're going.
+
+00:05:06.000 --> 00:05:08.300
+So it's going to keep progressing forward.
+
+00:05:08.870 --> 00:05:13.300
+Now at some point, when will all
+of a sudden it flip like a switch
+
+00:05:13.349 --> 00:05:15.120
+and go from one to the other?
+
+00:05:15.480 --> 00:05:18.479
+This is where the equivalence
+point is, meaning where the
+
+00:05:18.480 --> 00:05:21.260
+concentrations are equal to each other.
+
+00:05:21.530 --> 00:05:25.600
+When can it go no farther and it's
+going to turn pink in an instant.
+
+00:05:26.240 --> 00:05:31.450
+So this is when it goes from acidic to
+basic, and this is known as the end point.
+
+00:05:31.460 --> 00:05:34.380
+So where do you stop the reaction, right?
+
+00:05:34.780 --> 00:05:38.299
+So generally it's right, right
+after that equivalence point
+
+00:05:38.299 --> 00:05:39.919
+was reached is when you stop.
+
+00:05:39.940 --> 00:05:44.830
+Whereas all of a sudden you have a
+little bit more OH minus than H plus,
+
+00:05:44.859 --> 00:05:47.510
+and this is something that we're going
+to be doing in the lab in the future.
+
+00:05:48.695 --> 00:05:51.795
+This is a whole idea of what these
+types of reactions are and how
+
+00:05:51.795 --> 00:05:57.725
+to calculate them is exactly what
+volume or molarity is required to
+
+00:05:57.725 --> 00:05:59.505
+neutralize these different solutions.
+
+00:05:59.915 --> 00:06:01.875
+Let's go back to our practice problems.
+
+00:06:01.935 --> 00:06:05.404
+You know, when you're in lab, sometimes
+you, you write really quickly and
+
+00:06:05.404 --> 00:06:08.175
+you can't read the notes later and
+you don't know exactly what it is.
+
+00:06:08.175 --> 00:06:10.335
+Well, this could be something
+that's very dangerous, especially
+
+00:06:10.335 --> 00:06:12.565
+when it comes to acids and bases.
+
+00:06:13.145 --> 00:06:17.095
+So, we want to know what the concentration
+is so we know exactly how to handle it.
+
+00:06:17.105 --> 00:06:18.625
+So, what could we do to do that?
+
+00:06:18.965 --> 00:06:22.874
+Well, this is when you can perform an
+acid base titration, and what you will
+
+00:06:22.874 --> 00:06:28.915
+do is we're going to place 20 milliliters
+of the HCL in a flask with an indicator.
+
+00:06:29.655 --> 00:06:31.969
+And what we have on hand, so we have 0.
+
+00:06:31.969 --> 00:06:37.075
+1524 molar NaOH, and we're going
+to place that in a burette.
+
+00:06:37.895 --> 00:06:40.825
+And when we place it in the
+burette, we have an initial
+
+00:06:40.825 --> 00:06:44.594
+reading of 55 milliliters of base.
+
+00:06:45.075 --> 00:06:48.554
+So this is exactly where it's
+starting on the top of the burette.
+
+00:06:48.594 --> 00:06:52.555
+Now keep in mind, burettes are all
+about how much are you dispensing.
+
+00:06:52.924 --> 00:06:57.635
+So if the volume starts at 55 milliliters,
+that doesn't mean you only have 55.
+
+00:06:57.695 --> 00:06:59.255
+It's where the label starts.
+
+00:06:59.965 --> 00:07:03.445
+So when you perform the
+experiment, the end point reach,
+
+00:07:03.705 --> 00:07:06.365
+now what the volume says is 33.
+
+00:07:06.415 --> 00:07:07.694
+87 milliliters.
+
+00:07:08.165 --> 00:07:09.925
+So we dispense from 0.
+
+00:07:09.975 --> 00:07:12.424
+55 to 33.
+
+00:07:12.425 --> 00:07:12.885
+87.
+
+00:07:13.615 --> 00:07:16.275
+So what is the concentration of HCl?
+
+00:07:16.275 --> 00:07:18.375
+How do we go through a problem like that?
+
+00:07:18.385 --> 00:07:19.925
+That seemed a little confusing.
+
+00:07:19.935 --> 00:07:21.115
+What should we do?
+
+00:07:21.655 --> 00:07:25.035
+So let's go through the steps,
+exactly what we need to do here.
+
+00:07:25.614 --> 00:07:29.405
+So the first part of this is that we
+need to predict and balance the problem.
+
+00:07:29.465 --> 00:07:31.065
+Okay, so that's always the first thing.
+
+00:07:31.565 --> 00:07:35.874
+Right, so being that we have HCl plus
+NaOH, well, we're going to do inside
+
+00:07:35.885 --> 00:07:37.905
+outside, and I showed this one before.
+
+00:07:38.305 --> 00:07:41.055
+Is that na is gonna bond with cl.
+
+00:07:41.055 --> 00:07:45.495
+So cation always first and
+then H with OH to make water.
+
+00:07:45.675 --> 00:07:48.315
+And it's already balanced
+with a one-to-one ratio.
+
+00:07:48.935 --> 00:07:51.575
+So it's double replacement
+with the following products.
+
+00:07:52.255 --> 00:07:54.925
+Now, the main reason we're write
+that writing this, uh, balance
+
+00:07:54.925 --> 00:07:58.885
+equation is because we need to know
+the mole ratios for these problems.
+
+00:07:59.235 --> 00:08:03.585
+This one up here is a one-to-One reaction,
+meaning all the coefficients are one,
+
+00:08:03.995 --> 00:08:05.885
+but sometimes it's not the case, right?
+
+00:08:05.885 --> 00:08:07.595
+You might have twos and threes or fours.
+
+00:08:07.945 --> 00:08:09.215
+And that's going to affect your math.
+
+00:08:10.655 --> 00:08:12.805
+The next thing is we need
+to stay organized and write
+
+00:08:12.805 --> 00:08:14.094
+down all the key terms.
+
+00:08:14.344 --> 00:08:17.305
+So with this, right, we were
+given the following problem, which
+
+00:08:17.305 --> 00:08:20.315
+had a lot of information in it,
+which was a little overwhelming.
+
+00:08:20.865 --> 00:08:23.585
+So what we want to kind of do
+is go through this and kind of
+
+00:08:23.595 --> 00:08:25.225
+highlight what is important.
+
+00:08:25.254 --> 00:08:26.035
+What do we know?
+
+00:08:26.394 --> 00:08:30.335
+So the first thing is, is that we
+had about 20 milliliters of HCl.
+
+00:08:30.825 --> 00:08:33.184
+So let's write that down for ourselves.
+
+00:08:33.469 --> 00:08:34.339
+off to the side.
+
+00:08:34.799 --> 00:08:38.219
+So we have 20 mls of HCl.
+
+00:08:38.890 --> 00:08:39.969
+Now what else do we have?
+
+00:08:39.980 --> 00:08:45.890
+Well, we also were given the concentration
+and the starting point and the end point
+
+00:08:46.349 --> 00:08:51.549
+of our, of our, uh, sodium hydroxide
+in this, in this reaction, right?
+
+00:08:51.549 --> 00:08:54.630
+So we had the concentration
+here, which was 0.
+
+00:08:54.710 --> 00:08:55.990
+1524 molar.
+
+00:08:57.355 --> 00:09:04.135
+And we also have the initial and
+the end point of volumes as well.
+
+00:09:04.655 --> 00:09:07.275
+So let's write all these
+little values down.
+
+00:09:07.915 --> 00:09:12.755
+So with that, right, with our
+base concentration, we had for
+
+00:09:12.755 --> 00:09:17.864
+sodium hydroxide, so we had 0.
+
+00:09:17.935 --> 00:09:19.605
+1524 molar.
+
+00:09:20.375 --> 00:09:23.825
+Then we had a final volume of 33.
+
+00:09:24.319 --> 00:09:24.540
+0.
+
+00:09:24.590 --> 00:09:29.939
+87 and a initial volume of 0.
+
+00:09:29.940 --> 00:09:32.900
+55 milliliters for both
+of these two values.
+
+00:09:33.579 --> 00:09:37.130
+So what we are going to do is, uh,
+the first thing is we are going to
+
+00:09:37.140 --> 00:09:40.759
+follow our stoichiometry process
+when we're going to look at these.
+
+00:09:41.150 --> 00:09:44.410
+So we want to stay organized
+and follow our mole map.
+
+00:09:44.410 --> 00:09:45.910
+So let's do that for ourselves.
+
+00:09:46.170 --> 00:09:48.950
+The first thing we're going to do is
+we're going to follow our mole map.
+
+00:09:49.415 --> 00:09:53.275
+So meaning that we need to kind of
+map out the pieces that we have.
+
+00:09:53.565 --> 00:09:56.545
+So when we do solution
+stoichiometry, we want to go from
+
+00:09:56.545 --> 00:09:59.225
+the volume of the base to moles.
+
+00:09:59.284 --> 00:10:03.234
+Now, the reason we're going to start
+with our base is because we know
+
+00:10:03.234 --> 00:10:06.050
+the concentration and the volume.
+
+00:10:06.170 --> 00:10:09.500
+You always start when you know
+both those pieces of information.
+
+00:10:10.009 --> 00:10:14.670
+Now, with titration, we need to calculate
+what the volume is, though, in this
+
+00:10:14.670 --> 00:10:18.579
+case, because if you notice, we were
+given two different volumes, which is
+
+00:10:18.579 --> 00:10:20.910
+where we started and where we ended.
+
+00:10:21.270 --> 00:10:25.160
+So what we will do is we're going to
+calculate the change in volume, which
+
+00:10:25.160 --> 00:10:29.000
+is always known as the volume dispensed.
+
+00:10:29.010 --> 00:10:31.970
+So how much is used in this reaction?
+
+00:10:32.669 --> 00:10:36.560
+So we will just do final
+minus initial, so 33.
+
+00:10:36.610 --> 00:10:36.850
+87.
+
+00:10:37.890 --> 00:10:38.649
+Minus 0.
+
+00:10:38.650 --> 00:10:44.760
+55 milliliters, and this is going
+to be how much volume we are
+
+00:10:44.760 --> 00:10:46.599
+going to have in this problem.
+
+00:10:47.130 --> 00:10:50.460
+So when we do the math, we
+are going to have about 33.
+
+00:10:51.009 --> 00:10:56.440
+32 milliliters at our disposal,
+so that's how much we used.
+
+00:10:56.940 --> 00:10:59.800
+Now what we are going to do is
+we are going to start with the
+
+00:10:59.800 --> 00:11:01.370
+given term that's by itself.
+
+00:11:01.870 --> 00:11:05.960
+As you can see with this milliliter
+value, it's a term that you can't
+
+00:11:06.199 --> 00:11:08.069
+flip, it doesn't have a denominator.
+
+00:11:08.435 --> 00:11:11.645
+So we are going to start
+with that value and then use
+
+00:11:11.645 --> 00:11:15.064
+molarity to convert it to moles.
+
+00:11:15.505 --> 00:11:22.285
+So when we have 3 33 0.32 milliliters,
+we're gonna convert this to liters first.
+
+00:11:22.895 --> 00:11:25.714
+So we have a thousand MLS is one liter.
+
+00:11:26.655 --> 00:11:35.615
+Now we'll use our molarity,
+which was 0.1524 moles per liter.
+
+00:11:35.855 --> 00:11:36.035
+Okay?
+
+00:11:36.035 --> 00:11:37.925
+And that's of sodium hydroxide.
+
+00:11:39.340 --> 00:11:43.300
+Now what we are going to do here
+is we need to go to moles of acid.
+
+00:11:43.640 --> 00:11:46.660
+So this is where the chemical
+equation is useful, right?
+
+00:11:46.760 --> 00:11:53.059
+It's a one to one ratio, meaning that we
+have one mole of NaOH is equivalent to
+
+00:11:53.060 --> 00:11:56.310
+every one mole of HCl in this problem.
+
+00:11:56.719 --> 00:12:00.550
+You need to write that step down
+because your units need to cancel.
+
+00:12:01.220 --> 00:12:04.890
+All right, so we have one
+mole NaOH, one mole HCl.
+
+00:12:05.780 --> 00:12:08.860
+So now when we convert this,
+what we are going to end up
+
+00:12:08.940 --> 00:12:13.010
+getting is approximately 0.
+
+00:12:13.500 --> 00:12:17.220
+005077968 moles of HCl.
+
+00:12:18.005 --> 00:12:19.805
+But the thing is we want
+to know the concentration.
+
+00:12:20.285 --> 00:12:23.245
+So what do we need to figure
+out concentration is, well,
+
+00:12:23.245 --> 00:12:27.624
+you got to remember it's m is
+equal to moles over liters.
+
+00:12:28.205 --> 00:12:32.985
+And we were given the volume of
+HCl that was used, which was 20
+
+00:12:33.014 --> 00:12:36.094
+milliliters, which is approximately 0.
+
+00:12:36.245 --> 00:12:39.025
+020 liters, right?
+
+00:12:39.395 --> 00:12:43.405
+So when we divide those two
+numbers, what we're going to end
+
+00:12:43.405 --> 00:12:47.155
+up getting is a concentration of 0.
+
+00:12:47.265 --> 00:12:49.034
+254 moles.
+
+00:12:49.405 --> 00:12:52.305
+molarity as our answer.
+
+00:12:52.305 --> 00:12:57.265
+So that's what the, the
+unknown concentration was of
+
+00:12:57.375 --> 00:12:59.095
+our chemical in this case.
+
+00:12:59.095 --> 00:13:03.844
+So we do moles over liters is equal
+to our concentration, which is
+
+00:13:03.865 --> 00:13:05.844
+how we solve a titration problem.
+
+00:13:06.305 --> 00:13:08.345
+Let's go on to one more example.
+
+00:13:08.494 --> 00:13:13.695
+In a titration, if sulfuric
+acid is neutralized by 0.
+
+00:13:13.785 --> 00:13:20.795
+200 molar sodium hydroxide, With
+an initial burette reading of 5 mL
+
+00:13:20.885 --> 00:13:26.944
+and a final reading of 65 mL, what
+is the concentration of the acid?
+
+00:13:27.465 --> 00:13:30.534
+Okay, so the first thing we need
+to do is we're going to predict
+
+00:13:30.574 --> 00:13:32.494
+and balance our chemical equation.
+
+00:13:32.934 --> 00:13:37.255
+So, being it's inside out, we'll take
+sodium and combine it with sulfate.
+
+00:13:38.125 --> 00:13:42.555
+So we'll have NA, and then we wanna
+write the plus here, and then we'll
+
+00:13:42.555 --> 00:13:46.095
+have sulfate, which is SO 42 minus.
+
+00:13:46.635 --> 00:13:49.155
+We're gonna swap, drop their charges.
+
+00:13:49.594 --> 00:13:53.665
+So the two of the sulfate is going
+to come down next to sodium to
+
+00:13:53.665 --> 00:13:55.855
+balance out the pluses and minuses.
+
+00:13:56.685 --> 00:13:58.335
+And then we're going to be balanced.
+
+00:13:58.335 --> 00:14:02.205
+Then we're gonna have h plus
+and oh minus coming together.
+
+00:14:02.885 --> 00:14:06.075
+So we have H plus oh minus.
+
+00:14:06.730 --> 00:14:11.050
+Now these are technically just water,
+so we're gonna, but we're gonna keep
+
+00:14:11.050 --> 00:14:15.840
+it as HOH to help make balancing a
+little bit easier in this problem.
+
+00:14:16.619 --> 00:14:20.930
+So the first thing is, is that when
+we are looking at this, is we want to
+
+00:14:20.930 --> 00:14:26.330
+start with usually the polyatomics,
+but right now your polyatomics are
+
+00:14:26.330 --> 00:14:30.480
+balanced, so we have one sulfate on the
+left and the right, and then we also
+
+00:14:30.480 --> 00:14:32.770
+have one OH on the left and the right.
+
+00:14:33.314 --> 00:14:35.845
+So, what we are going to do is
+let's start with sodium, being that
+
+00:14:35.865 --> 00:14:40.524
+there's two on the right, so we need
+two on the left hand side as well.
+
+00:14:41.234 --> 00:14:44.664
+So, now that we have that, we are
+going to look at the hydroxides.
+
+00:14:44.915 --> 00:14:48.324
+So there's one, there's two on
+the left, and only one on the
+
+00:14:48.324 --> 00:14:49.525
+right hand side right here.
+
+00:14:50.265 --> 00:14:56.574
+So, what we will do is we're going
+to put a two next to HOH, and as a
+
+00:14:56.574 --> 00:15:00.595
+result, we look now at the hydrogens,
+we see that we have two on the right,
+
+00:15:00.835 --> 00:15:02.305
+and we also have two on the left.
+
+00:15:02.805 --> 00:15:04.074
+Everything is now.
+
+00:15:04.510 --> 00:15:07.700
+Nice and balanced so we can
+kind of clean up our problem.
+
+00:15:08.109 --> 00:15:15.199
+We can rewrite H2O And now we have a
+completely balanced chemical reaction.
+
+00:15:15.920 --> 00:15:20.179
+All right So now the first thing is
+we need to stay organized when we are
+
+00:15:20.180 --> 00:15:25.400
+writing out this problem So when we
+are looking at this Generally, we want
+
+00:15:25.410 --> 00:15:29.759
+to write down all the little piece of
+information that we have when we are
+
+00:15:29.759 --> 00:15:36.305
+seeing this So the first thing is is
+that we have H2O 20 milliliters of H2SO4
+
+00:15:36.995 --> 00:15:39.625
+and we also have a concentration of 0.
+
+00:15:39.694 --> 00:15:43.895
+200 milliliters of
+H2SO4 and we molar NaOH.
+
+00:15:44.525 --> 00:15:47.445
+So, and there's also initial
+and final volume reading.
+
+00:15:47.445 --> 00:15:51.745
+So we need to figure out how
+much a sodium hydroxide was used.
+
+00:15:52.275 --> 00:15:58.444
+So when we're doing this, we, we ended
+with 65 milliliters was our final reading
+
+00:15:58.504 --> 00:16:01.664
+and we started with five milliliters.
+
+00:16:02.035 --> 00:16:04.285
+So we're going to subtract those
+two numbers and we're going to
+
+00:16:04.295 --> 00:16:06.849
+see that we had 60 milliliters.
+
+00:16:07.319 --> 00:16:12.640
+of, of, uh, sodium hydroxide that
+was used in this problem, so that's
+
+00:16:12.640 --> 00:16:14.060
+going to go with sodium hydroxide.
+
+00:16:14.740 --> 00:16:19.339
+So when we're staying organized, this
+is always the crucial detail that we
+
+00:16:19.339 --> 00:16:23.580
+want to do, uh, when we are doing this
+because it's going to make our problem
+
+00:16:23.760 --> 00:16:25.800
+easier when we are doing our molar map.
+
+00:16:26.229 --> 00:16:27.020
+Now let's go to that.
+
+00:16:27.089 --> 00:16:30.380
+So the first thing is we want to map out
+the problem, so we've got to start with
+
+00:16:30.380 --> 00:16:32.449
+our volume because it's a term by itself.
+
+00:16:32.950 --> 00:16:39.350
+So 60 milliliters, we need to convert this
+to liters in order to use our molarity.
+
+00:16:39.980 --> 00:16:45.360
+So being that our goal is always the
+mole, so being that we have 1000 mLs
+
+00:16:45.660 --> 00:16:50.634
+to 1 liter, this now puts our units
+prime to be able to use our molarity.
+
+00:16:51.025 --> 00:16:53.345
+molarity for our conversions.
+
+00:16:53.975 --> 00:16:56.795
+So we have our molarity, which is 0.
+
+00:16:56.905 --> 00:17:00.754
+200 molar NaOH.
+
+00:17:00.834 --> 00:17:05.394
+So what we'll do is we'll put moles
+of sodium hydroxide, and that's
+
+00:17:05.395 --> 00:17:07.795
+equivalent to every one liter.
+
+00:17:08.644 --> 00:17:12.385
+We want to now use our mole to
+mole ratio, which as we see, this
+
+00:17:12.395 --> 00:17:14.325
+is when balancing does matter.
+
+00:17:14.705 --> 00:17:17.845
+We have two moles of sodium hydroxide.
+
+00:17:18.250 --> 00:17:22.819
+is equivalent to every
+one mole of sulfuric acid.
+
+00:17:23.329 --> 00:17:27.560
+So this is where it does play
+an impact in our calculations.
+
+00:17:28.179 --> 00:17:30.350
+Now what we're going to do
+with that is we're going to
+
+00:17:30.350 --> 00:17:31.879
+figure out the number of moles.
+
+00:17:32.379 --> 00:17:46.679
+So what we will see is we'll get 0.00006
+moles of H two SO four, and what we
+
+00:17:46.679 --> 00:17:52.199
+now need to do is divide this by the
+volume, which was 20 milliliters,
+
+00:17:52.780 --> 00:18:00.979
+so converted that, convert that to
+liters, so 0.0 2, 0 0 liters, and we
+
+00:18:00.979 --> 00:18:04.760
+will get a molarity of 0.3 hundred.
+
+00:18:05.105 --> 00:18:10.195
+Molar, H2SO4, that's our answer.
+
+00:18:11.605 --> 00:18:15.165
+So it's a little involved, but the
+hardest part is kind of the end part.
+
+00:18:15.205 --> 00:18:18.505
+You stop at moles and
+then divide it by liters.
+
+00:18:18.975 --> 00:18:20.554
+But I have a follow up question to this.
+
+00:18:21.145 --> 00:18:28.254
+So what is the H plus concentration
+in this sulfuric acid acid solution?
+
+00:18:28.764 --> 00:18:31.784
+The one thing to keep in mind is
+for a lot of you is that you'll
+
+00:18:31.784 --> 00:18:35.954
+have new notation thrown at you all
+the time in Chem 3A and one of the
+
+00:18:35.954 --> 00:18:38.405
+biggest things is square brackets.
+
+00:18:38.784 --> 00:18:43.864
+So if you ever see square brackets
+around a number, so just like this H
+
+00:18:43.914 --> 00:18:48.350
+plus here where you see the the orange
+brackets, Well, this is referring
+
+00:18:48.350 --> 00:18:50.680
+to concentration, meaning molarity.
+
+00:18:51.210 --> 00:18:54.260
+So what is the H plus concentration here?
+
+00:18:54.750 --> 00:18:56.470
+So being that we have 0.
+
+00:18:56.540 --> 00:19:05.680
+300 Moles over every of H two SF four
+over every liter, we can do a quick little
+
+00:19:05.680 --> 00:19:08.770
+easy calculation based on dissociation.
+
+00:19:09.920 --> 00:19:14.090
+So being that H two, SF four is
+a strong acid, it's very soluble.
+
+00:19:14.830 --> 00:19:18.980
+So that means that we have two
+hydrogens that dissociate for
+
+00:19:19.010 --> 00:19:22.170
+every sulfate ion in solution.
+
+00:19:22.170 --> 00:19:23.760
+So we can label them as aqueous.
+
+00:19:26.570 --> 00:19:31.830
+So that means that we have for
+every one mole of H two, so four.
+
+00:19:33.155 --> 00:19:39.025
+We have two moles of H
+plus ion that are created.
+
+00:19:39.535 --> 00:19:41.445
+So what is our concentration here?
+
+00:19:41.445 --> 00:19:43.065
+Well, it's going to be 0.
+
+00:19:43.065 --> 00:19:43.795
+3 times two.
+
+00:19:44.175 --> 00:19:47.514
+So you're going to get
+a concentration of 0.
+
+00:19:47.515 --> 00:19:47.639
+600.
+
+00:19:48.120 --> 00:19:54.630
+Molar for your H plus ion,
+so that is your answer here.
+
+00:19:54.630 --> 00:19:58.430
+So you can convert it for individual
+ions too, which is a very valuable
+
+00:19:58.430 --> 00:20:02.099
+skill to know, especially as we
+start to get closer and closer to
+
+00:20:02.100 --> 00:20:07.109
+understanding acid base reactions and
+solving for pH, which is all about how
+
+00:20:07.110 --> 00:20:09.210
+much hydrogen ion there is in solution.
+
+00:20:09.830 --> 00:20:13.170
+Alright, so this is the end
+of titrations and molarity.
+
+00:20:13.170 --> 00:20:14.540
+Thank you so much for listening.
+
+00:20:14.800 --> 00:20:16.900
+If this video helped
+you, please let me know.
+
+00:20:16.900 --> 00:20:20.619
+If it was a little confusing, reach
+out and please message me, comment
+
+00:20:20.619 --> 00:20:22.170
+below and tell me all about it.
+
+00:20:22.690 --> 00:20:25.700
+Uh, if this is your first time here,
+please hit that like button, subscribe
+
+00:20:25.709 --> 00:20:29.000
+button, or refer to any of my other
+videos to help you try to pass chemistry
+
+00:20:29.000 --> 00:20:30.420
+and thank you so much for listening.
+
+00:20:30.860 --> 00:20:32.280
+I'll see you all later.
+
+00:20:32.370 --> 00:20:32.880
+Bye now.
+
