@@ -1,8 +1,8 @@
 {
   "channel": "https://www.youtube.com/@itsdrdan",
-  "generatedAt": "2026-11-09T21:29:12.860055+00:00",
+  "generatedAt": "2026-11-10T18:43:34.682524+00:00",
   "videoCount": 151,
-  "captionCount": 22,
+  "captionCount": 27,
   "videos": [
     {
       "id": "Nb4z-SSwmb4",
@@ -352,7 +352,7 @@
       "uploadDate": "",
       "order": 24,
       "url": "https://www.youtube.com/watch?v=JMRz9TRVUQg",
-      "caption": null
+      "caption": "./captions/JMRz9TRVUQg.vtt"
     },
     {
       "id": "-UrwKIGAj08",
@@ -436,7 +436,7 @@
       "uploadDate": "",
       "order": 30,
       "url": "https://www.youtube.com/watch?v=yXV7aNPvkWA",
-      "caption": null
+      "caption": "./captions/yXV7aNPvkWA.vtt"
     },
     {
       "id": "EcT5aqQzaYA",
@@ -534,7 +534,7 @@
       "uploadDate": "",
       "order": 37,
       "url": "https://www.youtube.com/watch?v=XMlP-sRigPM",
-      "caption": null
+      "caption": "./captions/XMlP-sRigPM.vtt"
     },
     {
       "id": "fBVx-i_Ehmc",
@@ -562,7 +562,7 @@
       "uploadDate": "",
       "order": 39,
       "url": "https://www.youtube.com/watch?v=efD7e2XiNsM",
-      "caption": null
+      "caption": "./captions/efD7e2XiNsM.vtt"
     },
     {
       "id": "qwkB_gLdg6s",
@@ -590,7 +590,7 @@
       "uploadDate": "",
       "order": 41,
       "url": "https://www.youtube.com/watch?v=-G1zjTVpkgU",
-      "caption": null
+      "caption": "./captions/-G1zjTVpkgU.vtt"
     },
     {
       "id": "sadO3B7s_UY",
