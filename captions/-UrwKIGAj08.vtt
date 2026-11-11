@@ -1,0 +1,1488 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.060 --> 00:00:03.260
+Hello, and welcome back to
+another video with ItsDrDan.
+
+00:00:03.280 --> 00:00:06.220
+And today we're going to be
+learning about the world of buffers.
+
+00:00:06.630 --> 00:00:11.639
+So in this particular video, this is an
+introductory video to understand what the
+
+00:00:11.640 --> 00:00:18.040
+concept of a buffer is and how exactly you
+can pick and choose how to make a buffer.
+
+00:00:18.519 --> 00:00:23.700
+So with this one, the idea of what a
+buffer solution is, is that a mean teens,
+
+00:00:23.710 --> 00:00:27.319
+the pH by resisting changes in the pH.
+
+00:00:27.320 --> 00:00:27.369
+Okay.
+
+00:00:27.800 --> 00:00:32.560
+So meaning that if you add a very
+tiny amount of acid or base, it's
+
+00:00:32.560 --> 00:00:35.430
+going to neutralize that acid or base.
+
+00:00:35.909 --> 00:00:40.400
+So what the whole idea here is, I have,
+I've drawn here is I have a buffer
+
+00:00:40.400 --> 00:00:43.440
+solution on the left hand side here.
+
+00:00:43.959 --> 00:00:47.019
+And what we have inside
+is a little pH probe.
+
+00:00:47.050 --> 00:00:50.250
+So when you dip a probe in the
+solution, it lets you know the pH.
+
+00:00:50.760 --> 00:00:53.970
+Now, if you add an acid to it, or a base.
+
+00:00:54.350 --> 00:00:58.850
+One thing is you're gonna notice is that
+the concentration is did not change much.
+
+00:00:59.120 --> 00:01:02.269
+It originally was at a seven,
+and currently at the moment
+
+00:01:02.269 --> 00:01:04.160
+you see that it's at a 6.9.
+
+00:01:04.250 --> 00:01:09.320
+After you made it more acidic and
+it's at a 7.1 when you made it more
+
+00:01:09.410 --> 00:01:11.240
+basic on the other side, right?
+
+00:01:11.245 --> 00:01:13.100
+So there was not much of a change.
+
+00:01:13.640 --> 00:01:17.660
+So when it comes to add a
+buffer, it resists change.
+
+00:01:17.720 --> 00:01:20.210
+The pH is relatively maintained.
+
+00:01:20.600 --> 00:01:22.910
+It's an equilibrium process.
+
+00:01:23.320 --> 00:01:28.570
+So meaning that you tried to make the
+reaction go forward, but it resisted it.
+
+00:01:28.830 --> 00:01:29.320
+It went.
+
+00:01:30.600 --> 00:01:34.400
+So whenever we are looking at this
+compared to let's say a solution of
+
+00:01:34.410 --> 00:01:39.549
+water, for example, well, if I have
+just water with my probe, I'll measure
+
+00:01:39.549 --> 00:01:41.400
+the pH and it's a seven, right?
+
+00:01:41.409 --> 00:01:44.130
+That's the normal pH for neutral water.
+
+00:01:44.660 --> 00:01:46.680
+Now if I add an acid to it.
+
+00:01:47.145 --> 00:01:50.835
+You're going to see that the pH is
+going to change very, very quickly.
+
+00:01:50.854 --> 00:01:56.054
+So see this at a four, I add the exact
+same amount of acid to the buffered
+
+00:01:56.054 --> 00:02:01.294
+one and to the, to the, to water
+and it changed dramatically, right?
+
+00:02:01.324 --> 00:02:02.664
+It changed drastically.
+
+00:02:03.095 --> 00:02:07.774
+If I added a base, the same amount
+that I added above to water, it
+
+00:02:07.774 --> 00:02:09.345
+changed all the way to an 11.
+
+00:02:09.405 --> 00:02:11.874
+You see that it went a huge difference.
+
+00:02:12.385 --> 00:02:16.984
+So pH changes an insane amount
+when you just add it to water
+
+00:02:16.984 --> 00:02:18.954
+or any regular solution.
+
+00:02:18.984 --> 00:02:22.834
+When an acid or base is
+added, a buffer resists.
+
+00:02:23.024 --> 00:02:24.555
+So how does that exactly work?
+
+00:02:24.725 --> 00:02:25.484
+Let's take a look.
+
+00:02:31.655 --> 00:02:34.195
+The whole idea of when it comes
+to buffers is they re they
+
+00:02:34.644 --> 00:02:37.125
+essentially resist the pH change.
+
+00:02:37.390 --> 00:02:42.220
+When we add acids or bases now with
+something like this is extremely important
+
+00:02:42.220 --> 00:02:47.290
+Especially when it comes to the human
+body The body has natural buffer systems
+
+00:02:47.300 --> 00:02:53.630
+built into it to help essentially preserve
+Cellular and body function and the main
+
+00:02:53.630 --> 00:02:57.699
+reason it does that is because essentially
+all the food and drinks and beverages
+
+00:02:57.819 --> 00:03:02.630
+you eat and drink Are all very acidic
+and very basic and will affect the pH
+
+00:03:02.640 --> 00:03:06.989
+balance of your system One big example
+of that is let's say if you eat like a
+
+00:03:06.989 --> 00:03:10.530
+lot of acidic fatty food maybe and you
+get a really upset stomach, well that's
+
+00:03:10.560 --> 00:03:14.410
+because you had a little bit too much
+acid in your system, but over time you're
+
+00:03:14.420 --> 00:03:19.200
+going to feel better and your body will
+get back to its state of equilibrium.
+
+00:03:19.790 --> 00:03:26.900
+So the body essentially absorbs protons
+or H3O plus and hydroxides to maintain.
+
+00:03:27.500 --> 00:03:29.884
+This is very important
+for how your cells behave.
+
+00:03:30.165 --> 00:03:33.275
+And how your blood, blood
+functions within the body.
+
+00:03:33.935 --> 00:03:38.775
+Um, whenever it comes to something like
+trying to maintain the pH, what it's
+
+00:03:38.775 --> 00:03:41.885
+essentially doing is by neutralizing
+with the different components of
+
+00:03:41.885 --> 00:03:44.005
+it, it's going to help it stabilize.
+
+00:03:44.460 --> 00:03:47.490
+So, let's try to take a little
+bit, a little bit farther to look
+
+00:03:47.490 --> 00:03:49.470
+exactly how, how does this work?
+
+00:03:49.480 --> 00:03:50.720
+You didn't exactly explain it.
+
+00:03:50.720 --> 00:03:51.810
+Let's go even farther.
+
+00:03:51.850 --> 00:03:56.549
+Have a weak acid or base and
+it's with its conjugate partner.
+
+00:03:57.329 --> 00:03:59.779
+It will resist pH changes.
+
+00:04:00.349 --> 00:04:04.140
+So, whenever you have a, whenever
+you have an acid or a base added.
+
+00:04:04.660 --> 00:04:09.579
+It's going to actually neutralize
+that acid or base and help maintain
+
+00:04:09.579 --> 00:04:11.839
+pH by resisting the change.
+
+00:04:12.469 --> 00:04:15.739
+Now one thing that makes that
+so important is that the human
+
+00:04:15.740 --> 00:04:19.760
+body absorbs acids and bases.
+
+00:04:20.295 --> 00:04:24.495
+And the way it absorbs us from all the
+food and drinks that essentially we ingest
+
+00:04:24.495 --> 00:04:29.514
+on a regular everyday basis, and from
+your natural cellular processes of just
+
+00:04:29.514 --> 00:04:33.825
+keeping you running on a, on a day to
+day day on just the regular day to day.
+
+00:04:34.614 --> 00:04:38.155
+So if you eat and drink, you know,
+whatever it is, let's say if you have
+
+00:04:38.164 --> 00:04:42.004
+like fast food or soda or something,
+or even just any like sugary, any
+
+00:04:42.005 --> 00:04:46.165
+fruit drinks, a lot of them are very
+acidic, which if you have them, it's
+
+00:04:46.165 --> 00:04:48.525
+going to offset the pH of your body.
+
+00:04:48.955 --> 00:04:52.475
+But the thing is your body has built
+in buffer systems to make sure that
+
+00:04:52.475 --> 00:04:56.065
+doesn't happen because if you drank
+one acidic thing, it'd be like poison.
+
+00:04:56.075 --> 00:04:58.495
+You'd fall over dead,
+but that doesn't happen.
+
+00:04:58.555 --> 00:04:59.105
+Why?
+
+00:04:59.544 --> 00:05:02.995
+Um, so essentially whenever you
+have a buffer, it's very important
+
+00:05:03.005 --> 00:05:04.635
+to cell and blood function.
+
+00:05:05.005 --> 00:05:07.054
+It means teens, the pH.
+
+00:05:07.385 --> 00:05:11.275
+So one big example is that your
+blood with all of your blood cells
+
+00:05:11.275 --> 00:05:13.785
+in it is a giant buffer system.
+
+00:05:13.825 --> 00:05:17.534
+And one example of that is
+let's say if I have a carbonic
+
+00:05:17.565 --> 00:05:19.195
+acid, which is in your blood.
+
+00:05:19.685 --> 00:05:23.995
+And we were to combine that
+with its conjugate base, it
+
+00:05:24.025 --> 00:05:26.594
+would help maintain the system.
+
+00:05:27.094 --> 00:05:30.134
+So its conjugate base in this case, if
+you remember, differs from one single
+
+00:05:30.134 --> 00:05:34.824
+proton will help maintain that pH.
+
+00:05:35.395 --> 00:05:39.355
+And the other beauty of something like
+carbonic acid is that it can even go
+
+00:05:39.815 --> 00:05:44.495
+one more step to help hold, whether it's
+more acidic or more basic, depending on
+
+00:05:44.495 --> 00:05:47.455
+how you're breathing, how your body's
+functioning, it will maintain it.
+
+00:05:47.875 --> 00:05:51.274
+Let's take a look at how we make it and
+try to make this make a little more sense.
+
+00:05:51.335 --> 00:05:54.774
+So now the whole idea of what are
+the different components of a buffer.
+
+00:05:54.774 --> 00:06:00.135
+So as I said before, it has to be
+the conjugate acid base pair, meaning
+
+00:06:00.145 --> 00:06:04.695
+that generally we take a weak acid
+and we combine it with the salt.
+
+00:06:05.020 --> 00:06:10.120
+of its conjugate base, and they
+have to be in equal concentrations.
+
+00:06:10.630 --> 00:06:14.559
+So let's take a look at what that
+exactly represents through an example.
+
+00:06:15.130 --> 00:06:20.349
+So let's say if I want to create
+a buffer of acetic acid, we would
+
+00:06:20.349 --> 00:06:22.959
+need a salt of its conjugate base.
+
+00:06:23.799 --> 00:06:27.979
+Now, the salt is added to provide a
+higher concentration of the conjugate
+
+00:06:27.979 --> 00:06:32.169
+base because if you add just acetic acid
+into solution, it barely dissociates.
+
+00:06:32.830 --> 00:06:34.760
+So it's not going to have
+a lot of it in there.
+
+00:06:35.260 --> 00:06:38.000
+So let's try to take a look
+and try to understand how do we
+
+00:06:38.050 --> 00:06:39.769
+pick which salt that we have.
+
+00:06:40.250 --> 00:06:45.770
+So if I have acetic acid, well, if I
+lose, let's say a proton and dissociate
+
+00:06:45.789 --> 00:06:47.870
+in water, so if we have an H plus.
+
+00:06:48.479 --> 00:06:50.440
+What's going to be left?
+
+00:06:50.860 --> 00:06:57.760
+We're going to have C2H3O2
+as its conjugate base.
+
+00:06:58.350 --> 00:07:04.349
+So if we have the conjugate base, and
+then we have an acid, well, what could I
+
+00:07:04.360 --> 00:07:07.629
+use as a salt for this particular thing?
+
+00:07:08.130 --> 00:07:12.830
+Well, some examples of that would be
+if essentially any alkali metal bonded
+
+00:07:12.830 --> 00:07:15.390
+to that, uh, to that acetate ion.
+
+00:07:15.820 --> 00:07:17.750
+So let's say if I took sodium.
+
+00:07:18.460 --> 00:07:20.800
+acetate and I bonded those two together.
+
+00:07:21.300 --> 00:07:26.240
+So if we just take our acetate and
+cut and cut and paste that we can bond
+
+00:07:26.240 --> 00:07:28.010
+those two different pieces together.
+
+00:07:28.300 --> 00:07:29.729
+This would be one example.
+
+00:07:30.040 --> 00:07:33.210
+Another example of a salt
+could be like maybe potassium
+
+00:07:33.280 --> 00:07:34.840
+acetate could be another one.
+
+00:07:35.385 --> 00:07:41.365
+Essentially, anything that has that
+salt component to help create that ion.
+
+00:07:41.635 --> 00:07:45.585
+Because if I take, let's say
+sodium acetate, and I were to
+
+00:07:45.614 --> 00:07:50.105
+throw that into solution, well,
+what exactly would you make?
+
+00:07:50.445 --> 00:07:51.985
+You'd make sodium, right?
+
+00:07:52.314 --> 00:07:54.295
+And the acetate ion.
+
+00:07:54.425 --> 00:07:58.245
+So you would need to add both
+of them into a solution to make.
+
+00:07:59.625 --> 00:08:00.715
+It consists of both.
+
+00:08:00.725 --> 00:08:05.855
+So let's say if I wanted to pick how
+you would make the best buffer solution
+
+00:08:05.925 --> 00:08:10.665
+possible, if they were mixed in equal
+portions, how would you do that?
+
+00:08:11.265 --> 00:08:16.354
+Well, the first little check box is
+that it needs to be a weak acid, right?
+
+00:08:16.354 --> 00:08:19.224
+So either a weak acid or a weak base.
+
+00:08:19.705 --> 00:08:21.955
+So let's just go with a
+weak acid to make it easier.
+
+00:08:22.445 --> 00:08:25.974
+So what we are going to do is we're
+going to add an X to anything that's
+
+00:08:25.974 --> 00:08:28.224
+considered to be a strong acid.
+
+00:08:28.224 --> 00:08:28.965
+So that means no.
+
+00:08:29.910 --> 00:08:33.030
+So let's look at anything
+that can't be used.
+
+00:08:33.240 --> 00:08:37.429
+So if I go through my candidates
+here, we want to kind of look at our
+
+00:08:37.520 --> 00:08:39.549
+different acids that are available.
+
+00:08:39.559 --> 00:08:42.380
+So if we highlight our acids,
+we have a bunch of them.
+
+00:08:43.340 --> 00:08:47.410
+Which one of these are considered
+to be strong, weak, what do we have?
+
+00:08:48.090 --> 00:08:51.970
+Well, the first thing that you
+have is we have HBr, right?
+
+00:08:52.010 --> 00:08:54.000
+HBr is one of your strong acids.
+
+00:08:54.000 --> 00:08:55.040
+It's bromic acid.
+
+00:08:55.650 --> 00:08:59.669
+So even though it's going to be
+with its salt, it won't, it will
+
+00:08:59.669 --> 00:09:01.329
+be too many ions in solution.
+
+00:09:01.349 --> 00:09:03.910
+It won't be enough of the
+original one in there.
+
+00:09:03.910 --> 00:09:04.490
+So that's a no.
+
+00:09:05.540 --> 00:09:09.790
+Now if I have the next one,
+HCN and HI, are they a pair?
+
+00:09:10.110 --> 00:09:13.599
+Well, remember they have to
+differ by a single proton.
+
+00:09:14.040 --> 00:09:16.720
+And if I compare these two molecules.
+
+00:09:17.584 --> 00:09:19.935
+They differ by a carbon and a nitrogen.
+
+00:09:19.944 --> 00:09:21.005
+That's a big no.
+
+00:09:21.305 --> 00:09:22.285
+That's not going to be okay.
+
+00:09:23.364 --> 00:09:30.045
+Um, if we go to the next one, well, if I
+compare H2CO3 and sodium bicarbonate, do
+
+00:09:30.074 --> 00:09:32.295
+these, do these differ by a single proton?
+
+00:09:32.764 --> 00:09:34.084
+And you'll see that it is.
+
+00:09:34.085 --> 00:09:36.815
+It's different by just one
+proton and we have that sodium.
+
+00:09:36.815 --> 00:09:37.615
+So that's a salt.
+
+00:09:38.095 --> 00:09:40.985
+So that tells you, hey, you
+have, you found your salt.
+
+00:09:40.995 --> 00:09:41.635
+That's here.
+
+00:09:41.635 --> 00:09:43.135
+That's what the sodium part is.
+
+00:09:44.069 --> 00:09:50.480
+And what is the essential, uh, part of H
+two CO three is that it needs to be able
+
+00:09:50.480 --> 00:09:54.079
+to dissociate to make HCO three minus.
+
+00:09:54.490 --> 00:09:54.879
+Okay.
+
+00:09:55.460 --> 00:09:56.960
+Now even looking at the other ones, right?
+
+00:09:57.230 --> 00:10:01.649
+Hi makes I minus h plus that
+doesn't, that didn't match either.
+
+00:10:02.499 --> 00:10:04.849
+Now, so that could be a
+really good candidate.
+
+00:10:04.859 --> 00:10:06.239
+So let's put a little green check mark.
+
+00:10:06.239 --> 00:10:07.060
+Now, is it the best?
+
+00:10:07.249 --> 00:10:07.759
+I don't know yet.
+
+00:10:08.310 --> 00:10:10.939
+So if we look at the last one,
+right, that this other one,
+
+00:10:10.939 --> 00:10:12.990
+this H I that's a strong acid.
+
+00:10:13.220 --> 00:10:14.030
+So that's a no.
+
+00:10:14.739 --> 00:10:16.930
+And the last one is sodium
+hydroxide and water.
+
+00:10:16.930 --> 00:10:19.640
+Well, water is considered
+to be the acid here.
+
+00:10:20.320 --> 00:10:23.900
+Would this be considered to
+dissociate the right way?
+
+00:10:23.900 --> 00:10:28.429
+So if I take H2O, it would
+make H plus and OH minus.
+
+00:10:28.429 --> 00:10:30.910
+Well, OH minus and sodium are together.
+
+00:10:30.910 --> 00:10:34.299
+But hydroxide, what is that?
+
+00:10:34.319 --> 00:10:35.730
+That's a strong base.
+
+00:10:36.090 --> 00:10:37.789
+So that's gonna be a no as well.
+
+00:10:38.190 --> 00:10:43.820
+So we found our choice with carbonic
+acid because that is with its salt.
+
+00:10:44.110 --> 00:10:46.070
+So this is how you pick
+out the correct buffer.
+
+00:10:46.320 --> 00:10:47.810
+It needs to be a weak acid.
+
+00:10:48.204 --> 00:10:50.515
+with its conjugate base salt.
+
+00:10:50.925 --> 00:10:53.355
+And you can do the same with
+a weak base and its conjugate
+
+00:10:53.385 --> 00:10:57.685
+acid as well, but generally it's
+more common to use a weak acid.
+
+00:10:58.095 --> 00:10:59.665
+Let's take a look at another example.
+
+00:10:59.765 --> 00:11:03.644
+Which of the following would make
+the best buffer solution if mixed
+
+00:11:03.704 --> 00:11:05.715
+in roughly equal proportions?
+
+00:11:06.074 --> 00:11:09.105
+So here we don't have pairs, we
+have all these individual pieces.
+
+00:11:09.675 --> 00:11:12.455
+So the first thing you kind of want
+to do is let's try to see if we can
+
+00:11:12.455 --> 00:11:17.204
+eliminate any, um, common pairs so
+that, or especially anything that's
+
+00:11:17.204 --> 00:11:18.984
+considered a strong asset or a base.
+
+00:11:19.354 --> 00:11:23.594
+So if we kind of look over here, well
+what exactly can we use, what can we use?
+
+00:11:24.035 --> 00:11:26.005
+So we have the first one,
+you can see that we have HCL.
+
+00:11:27.199 --> 00:11:28.939
+HCL is a strong acid.
+
+00:11:28.969 --> 00:11:32.060
+So what we can kind of quickly
+do is we can say that's a no,
+
+00:11:32.549 --> 00:11:34.259
+that's not gonna quite work.
+
+00:11:34.810 --> 00:11:38.230
+Um, from there we have a couple
+weak, we have, we wanna look for
+
+00:11:38.230 --> 00:11:40.270
+any other acids that can be used.
+
+00:11:40.709 --> 00:11:43.649
+So we have a phosphoric acid as a choice.
+
+00:11:44.030 --> 00:11:47.420
+Um, and then there's no other
+acid that's available to us.
+
+00:11:47.939 --> 00:11:53.799
+So if we were to look at this, well,
+H 3 0 3, P oh four, if essentially,
+
+00:11:53.799 --> 00:11:58.089
+if that were to dissociate,
+you would need H two P oh four.
+
+00:11:58.520 --> 00:11:59.190
+Minus.
+
+00:11:59.730 --> 00:12:02.420
+Um, and that needs to be
+connected to some kind of salt.
+
+00:12:02.450 --> 00:12:04.880
+So can we see anything
+that would quite match?
+
+00:12:05.405 --> 00:12:11.435
+And if you look below it, well,
+essentially, KH2PO4 almost
+
+00:12:11.435 --> 00:12:13.175
+matches perfectly, right?
+
+00:12:13.194 --> 00:12:15.234
+They are almost identically the same.
+
+00:12:15.535 --> 00:12:17.425
+In this case, you have
+the salt stabilizing it.
+
+00:12:17.714 --> 00:12:22.995
+So these two would be a great
+pair to have for your answer.
+
+00:12:23.514 --> 00:12:24.694
+Now what about the last one?
+
+00:12:25.620 --> 00:12:29.240
+Lithium, we have lithium,
+uh, with L I B R O.
+
+00:12:29.500 --> 00:12:32.020
+And then nabra is the
+other one, N A B R O.
+
+00:12:32.290 --> 00:12:35.660
+They're both salts, but neither
+one of them is an acid, so
+
+00:12:35.670 --> 00:12:36.970
+that's gonna be a no go.
+
+00:12:37.540 --> 00:12:40.730
+And then NACL is just a salt, so
+that's not going to be okay either.
+
+00:12:41.230 --> 00:12:43.010
+So we have our pair.
+
+00:12:43.210 --> 00:12:47.499
+And that's the whole idea of this, is
+can we try to pick which one we have.
+
+00:12:48.160 --> 00:12:52.200
+So when it comes to buffers,
+they resist your pH changes,
+
+00:12:52.200 --> 00:12:53.199
+and that's the whole idea.
+
+00:12:53.725 --> 00:12:58.335
+Now, the last concept about buffers is
+all about this idea that we can actually
+
+00:12:58.335 --> 00:13:01.875
+quantify how the buffer actually works.
+
+00:13:02.324 --> 00:13:05.374
+So before we talked about how
+we can make a buffer and, and
+
+00:13:05.384 --> 00:13:07.664
+somewhat how, what it is doing.
+
+00:13:08.074 --> 00:13:13.605
+So just to emphasize that most important
+fact is that a buffer, it is absorbing
+
+00:13:13.855 --> 00:13:19.024
+either the acidic quality, which is
+the H plus or H3O plus from solution.
+
+00:13:19.605 --> 00:13:24.405
+Or the oh minus, and the whole idea
+is that it tries to maintain the
+
+00:13:24.405 --> 00:13:26.865
+pH at where it's designed to be.
+
+00:13:27.275 --> 00:13:32.214
+Now with a buffer, this does it
+within a certain capacity, so this is
+
+00:13:32.214 --> 00:13:33.805
+referred to as the buffer capacity.
+
+00:13:34.515 --> 00:13:39.965
+It can hold the pH within one of
+wherever the buffer is designed to work.
+
+00:13:40.175 --> 00:13:44.285
+So every single chemical series
+of buffers works at a different pH
+
+00:13:44.295 --> 00:13:47.074
+value, and this is something we can
+calculate, which I'll show you how
+
+00:13:47.075 --> 00:13:51.794
+to do just for a more basic, simple
+buffer for how this whole idea works.
+
+00:13:52.245 --> 00:13:54.824
+So this is a kind of illustrated,
+at least the way that I can think
+
+00:13:54.824 --> 00:13:58.515
+how to make this make sense is that
+a buffer, the whole idea first is
+
+00:13:58.515 --> 00:14:02.295
+that you have the acid, you have and
+it, the salt of its conjugate base.
+
+00:14:02.855 --> 00:14:08.064
+And with, when both molarities of each one
+equal each other, you have your buffer.
+
+00:14:08.275 --> 00:14:09.694
+So this is the pH where it works.
+
+00:14:10.324 --> 00:14:14.325
+Now the concept here is, let's
+say if I want to kind of play with
+
+00:14:14.325 --> 00:14:16.185
+the actual chemical reaction here.
+
+00:14:16.530 --> 00:14:19.710
+So if I have an acid and I add it
+to water and I have the conjugate
+
+00:14:19.710 --> 00:14:22.370
+base, how does this concept work?
+
+00:14:22.820 --> 00:14:28.000
+Well, it's all about equilibrium and how
+it can shift from one way to another.
+
+00:14:28.190 --> 00:14:31.160
+The goal is to keep the
+reaction in the middle.
+
+00:14:31.600 --> 00:14:38.190
+So if all of a sudden I decide to increase
+the amount of base in the solution, well,
+
+00:14:38.190 --> 00:14:40.830
+what is the buffer going to exactly do?
+
+00:14:41.240 --> 00:14:46.140
+Well, when we increase that, it's
+going to try to absorb it, right?
+
+00:14:46.140 --> 00:14:49.310
+It's going to try to keep
+it into the center here.
+
+00:14:49.689 --> 00:14:54.959
+Now, so when you add more base to the
+solution, it has to respond to that.
+
+00:14:55.000 --> 00:14:56.880
+Is it going to let it become basic?
+
+00:14:57.160 --> 00:15:00.239
+Well, no, or the entire
+system is going to fall apart.
+
+00:15:00.670 --> 00:15:04.959
+What's going to happen then is being that
+this whole reaction here has this double
+
+00:15:05.020 --> 00:15:06.869
+arrow that we've talked about before.
+
+00:15:07.370 --> 00:15:08.800
+Well, the reaction can either happen.
+
+00:15:09.189 --> 00:15:12.449
+in the forward direction
+or in the reverse.
+
+00:15:12.850 --> 00:15:17.830
+So if all of a sudden I decide to
+increase the basic side, which is the
+
+00:15:17.840 --> 00:15:23.530
+A minus, well, what is going to happen
+to, to essentially to change this?
+
+00:15:24.005 --> 00:15:27.805
+Well, the system is going to respond
+and instead it's going to actually
+
+00:15:27.814 --> 00:15:30.295
+try to shift the reaction backwards.
+
+00:15:30.444 --> 00:15:34.205
+It's like oh There's too much
+product laying around So in order to
+
+00:15:34.205 --> 00:15:38.135
+change the scales of this reaction
+and how everything is balanced,
+
+00:15:38.454 --> 00:15:40.105
+it's going to shift it back back.
+
+00:15:40.485 --> 00:15:44.805
+So when all of a sudden you increase
+a lot of base here, you're going
+
+00:15:44.805 --> 00:15:48.555
+to now see that the reaction is
+going to shift back to the center.
+
+00:15:48.755 --> 00:15:50.425
+It's going to try to hold it there.
+
+00:15:50.535 --> 00:15:51.564
+And that's what a buffer does.
+
+00:15:51.564 --> 00:15:55.145
+It neutralizes all these different
+components as being added to you.
+
+00:15:55.454 --> 00:15:58.624
+Like your blood or your circulatory
+system, when you introduce something
+
+00:15:58.624 --> 00:16:02.844
+that's basic to your body or acidic, your
+body is trying to maintain its levels
+
+00:16:02.844 --> 00:16:04.985
+so that it can operate appropriately.
+
+00:16:05.255 --> 00:16:06.954
+It has to be kept in the middle.
+
+00:16:07.364 --> 00:16:11.124
+So if I do the opposite, where all of
+a sudden I'm like, well, I want to now,
+
+00:16:11.504 --> 00:16:13.545
+uh, have all these acids in my body.
+
+00:16:13.545 --> 00:16:17.744
+So let's say you drink a bunch
+of soda or you, uh, have a bunch
+
+00:16:17.744 --> 00:16:19.104
+of energy drinks or coffee.
+
+00:16:19.244 --> 00:16:20.545
+Well, what's your body going to do?
+
+00:16:20.545 --> 00:16:24.244
+Is it just going to let it become acidic
+and allow it to kind of poison itself?
+
+00:16:24.245 --> 00:16:24.264
+And yeah.
+
+00:16:24.455 --> 00:16:26.275
+No, it's going to, it's
+going to fight back.
+
+00:16:26.525 --> 00:16:30.715
+So when you have something that's very
+acidic being added to your body, well,
+
+00:16:30.715 --> 00:16:35.665
+instead of it shifting, uh, in the
+reverse direction, like we did before,
+
+00:16:36.034 --> 00:16:40.464
+it's now going to cause it to shift
+forward in order to neutralize itself.
+
+00:16:40.864 --> 00:16:45.425
+So being that when we increase a
+ton of acid, it's now going to shift
+
+00:16:46.065 --> 00:16:48.345
+forward to respond to that change.
+
+00:16:48.665 --> 00:16:51.225
+It's all about, is there a response?
+
+00:16:51.255 --> 00:16:53.695
+And that's how the idea
+of buffers, they respond.
+
+00:16:54.045 --> 00:16:56.385
+And resist change of pH.
+
+00:16:56.750 --> 00:17:00.250
+Let's try to look at this one basic
+calculation to finish this video.
+
+00:17:00.400 --> 00:17:05.120
+So when it comes to actually trying to
+analyze where does your buffer work, this
+
+00:17:05.120 --> 00:17:10.689
+is all about understanding what is the Ka
+value and actually eventually deriving an
+
+00:17:10.689 --> 00:17:14.890
+equation that can be used to be able to
+determine how well does your buffer work.
+
+00:17:15.269 --> 00:17:20.380
+So if I had the following, it says
+that the Ka for acetic acid Uh, is 1.
+
+00:17:20.420 --> 00:17:22.260
+8 times 10 to the negative 5.
+
+00:17:22.819 --> 00:17:29.160
+What is the pH of the buffer, uh, that
+is prepared with 1 molar acetic acid?
+
+00:17:29.530 --> 00:17:33.810
+And then one molar of acetate
+ion, which is the conjugate base.
+
+00:17:34.330 --> 00:17:37.690
+So if I were to do that, how
+would the entire thing work?
+
+00:17:37.690 --> 00:17:38.960
+How would we set this up?
+
+00:17:39.000 --> 00:17:39.210
+Right?
+
+00:17:39.210 --> 00:17:41.380
+We never talked about
+something like this before.
+
+00:17:42.030 --> 00:17:46.350
+Well, the one thing we can do is we can
+set up a Ka equation in that we have a Ka.
+
+00:17:46.799 --> 00:17:50.460
+So what we will first do is,
+well, if you remember, is that Ka.
+
+00:17:50.890 --> 00:17:55.330
+so is equal to the products over
+the reactants of your formula.
+
+00:17:55.890 --> 00:17:59.939
+So if we have our Ka, what we
+will do is put our products, which
+
+00:17:59.939 --> 00:18:07.179
+in this case is H3O, uh, or H3O
+plus, and we have our acetic acid.
+
+00:18:07.179 --> 00:18:10.939
+And remember, all these are
+referred to in brackets as well.
+
+00:18:11.629 --> 00:18:15.310
+So we have our products
+all over the reactants.
+
+00:18:16.430 --> 00:18:18.880
+And then we'll take that expression.
+
+00:18:19.470 --> 00:18:24.480
+Now, from here, what we can essentially
+do is we can kind of rearrange it to
+
+00:18:24.480 --> 00:18:27.820
+actually solve for what is the pH.
+
+00:18:28.190 --> 00:18:30.030
+Well, so exactly how do you do that?
+
+00:18:30.030 --> 00:18:34.000
+Well, if you kind of remember
+from your equations, is that pH
+
+00:18:34.019 --> 00:18:40.760
+is equal to the negative log of
+OH, of negative log of H3O plus.
+
+00:18:41.300 --> 00:18:46.650
+So what we have to actually do is
+rearrange this formula to get H3O plus.
+
+00:18:47.014 --> 00:18:47.824
+By itself.
+
+00:18:47.834 --> 00:18:49.584
+So can we do that?
+
+00:18:49.584 --> 00:18:53.525
+Well, if we kind of do some mathematics,
+just to sort of cancel things out.
+
+00:18:53.825 --> 00:18:57.635
+So for example, if I were to look
+at this and I were to, let's say,
+
+00:18:57.665 --> 00:19:03.645
+multiply both sides, by the acid
+and base, so to cancel things out.
+
+00:19:03.645 --> 00:19:04.995
+So let's kind of move things around.
+
+00:19:05.185 --> 00:19:10.134
+So what I'm doing here is I essentially
+am multiplying by the opposites, so
+
+00:19:10.134 --> 00:19:12.534
+that way everything cancels our units.
+
+00:19:12.534 --> 00:19:15.504
+So as we can see, the
+conjugate base cancels.
+
+00:19:16.074 --> 00:19:17.205
+acid cancels.
+
+00:19:17.415 --> 00:19:20.365
+So we're multiplying and
+dividing by the different sides.
+
+00:19:20.814 --> 00:19:25.314
+So when we do that, we now have
+on the right hand side, the Ka
+
+00:19:25.684 --> 00:19:30.824
+multiplied by the conjugate, by
+the acid and the conjugate base.
+
+00:19:30.824 --> 00:19:32.504
+So both those concentrations.
+
+00:19:32.934 --> 00:19:36.675
+So we're sort of rearranging
+this equation, in order
+
+00:19:36.675 --> 00:19:40.125
+to get H3O plus by itself.
+
+00:19:40.665 --> 00:19:45.865
+Now the whole reason we're doing this is
+so that way we can actually find the pH.
+
+00:19:46.275 --> 00:19:49.784
+Now the last step is all about well
+in order to find pH you have to
+
+00:19:49.784 --> 00:19:51.924
+take the negative log of everything.
+
+00:19:52.405 --> 00:19:57.155
+So if we kind of do do that take
+the negative log of our H3O plus
+
+00:19:57.155 --> 00:20:06.084
+concentration we would have pH is equal
+to the negative log of Ka times the
+
+00:20:06.085 --> 00:20:08.910
+negative log Of our concentrations.
+
+00:20:09.764 --> 00:20:12.165
+So now, why is this something
+that's so important?
+
+00:20:12.175 --> 00:20:17.105
+Well, this is essentially how we define
+the Henderson Hasselbalch equation,
+
+00:20:17.465 --> 00:20:19.515
+which is quite the complicated name.
+
+00:20:19.975 --> 00:20:25.804
+So now, what this whole idea is, by
+deriving this, this, this Ka with
+
+00:20:25.805 --> 00:20:29.645
+a negative log is actually known
+as something known as the pKa.
+
+00:20:30.035 --> 00:20:33.455
+So what we do here is we take
+that negative log of the Ka.
+
+00:20:33.740 --> 00:20:36.690
+negative log of our,
+of our acids and bases.
+
+00:20:36.990 --> 00:20:40.340
+And it actually, we can plug all
+of our different components in
+
+00:20:40.340 --> 00:20:41.740
+that we started with the problem.
+
+00:20:42.409 --> 00:20:48.019
+So if I take my pH is equal to
+negative log of our K a value,
+
+00:20:48.019 --> 00:20:50.340
+which from earlier was 1.
+
+00:20:50.379 --> 00:20:52.270
+8 times 10 to the negative five.
+
+00:20:53.490 --> 00:20:57.410
+And then essentially we multiply
+that by the negative log of our
+
+00:20:57.410 --> 00:21:00.730
+concentrations, which were one over one.
+
+00:21:01.229 --> 00:21:02.269
+So it was one mole.
+
+00:21:02.850 --> 00:21:06.300
+Divided by one mole, and the whole
+thing is that number over there
+
+00:21:06.300 --> 00:21:08.250
+is going to end up cancelling out.
+
+00:21:08.990 --> 00:21:11.810
+And once we put all this
+into our calculator by
+
+00:21:11.830 --> 00:21:13.800
+taking the negative log of 1.
+
+00:21:13.800 --> 00:21:17.340
+8 times 10 to the negative 5th, times
+it by the negative log of 1 divided
+
+00:21:17.340 --> 00:21:21.939
+by 1, what we are going to get is
+the pH of where this buffer works.
+
+00:21:22.450 --> 00:21:27.629
+Which, after we place that into your
+calculator, you're going to get a pH of 4.
+
+00:21:27.710 --> 00:21:28.240
+74.
+
+00:21:28.745 --> 00:21:30.745
+is where this buffer works.
+
+00:21:30.745 --> 00:21:34.764
+So if you had acetic acid as
+a buffer, it would be able to
+
+00:21:34.764 --> 00:21:36.615
+maintain a pH right around 4.
+
+00:21:36.615 --> 00:21:40.815
+74, which the kind of let you
+know, it's like to go back up
+
+00:21:40.815 --> 00:21:42.894
+to the example I had earlier.
+
+00:21:43.095 --> 00:21:47.124
+So earlier I talked about, well,
+if the concentrations were equal to
+
+00:21:47.125 --> 00:21:50.465
+each other, which is what we had,
+well then essentially the buffer
+
+00:21:50.465 --> 00:21:53.775
+would be able to hold right around 4.
+
+00:21:53.775 --> 00:21:53.794
+74.
+
+00:21:54.175 --> 00:21:58.355
+So it could either increase the
+pH by one or decrease it by one.
+
+00:21:58.645 --> 00:22:04.925
+So within our buffer capacity, it
+could hold the pH from anywhere from 3.
+
+00:22:04.925 --> 00:22:05.825
+74 all the way to 5.
+
+00:22:05.825 --> 00:22:09.195
+74 in order to maintain
+it within a pH of 2.
+
+00:22:09.605 --> 00:22:14.554
+Now this is very critically important
+for biological systems which have enzymes
+
+00:22:14.554 --> 00:22:20.185
+and proteins um, that essentially are
+very sensitive to the pH without them
+
+00:22:20.185 --> 00:22:22.035
+being in their very specific ranges.
+
+00:22:22.350 --> 00:22:25.540
+They will denature, they will
+cease to function correctly, they
+
+00:22:25.540 --> 00:22:27.669
+won't be able to react properly.
+
+00:22:27.969 --> 00:22:30.259
+So this is the general idea
+of things that you'll see in
+
+00:22:30.259 --> 00:22:32.409
+physiology and in future courses.
+
+00:22:33.590 --> 00:22:36.899
+This is the idea with buffers, uh,
+just to be able to wrap this up.
+
+00:22:37.409 --> 00:22:39.549
+So let's take a look
+at our final thoughts.
+
+00:22:39.750 --> 00:22:43.580
+Most important concept here
+is that buffers resist pH.
+
+00:22:43.879 --> 00:22:46.980
+You can do a lot of calculations with
+these, but this is something that's
+
+00:22:46.980 --> 00:22:50.760
+beyond the scope of introductory
+chemistry, but it will be featured
+
+00:22:50.760 --> 00:22:52.629
+in future videos later on.
+
+00:22:53.215 --> 00:22:58.435
+Um, in terms of other courses that are on
+this page, but when it comes here, buffer
+
+00:22:58.435 --> 00:23:01.875
+just maintains the pH or resists that
+change, which is the ultimate thing here.
+
+00:23:02.065 --> 00:23:05.275
+You need the weak acid with,
+with its conjugate base,
+
+00:23:05.535 --> 00:23:06.634
+and that's how you pick it.
+
+00:23:06.945 --> 00:23:09.555
+So you have to know what a buffer
+is because it's something that's
+
+00:23:09.555 --> 00:23:14.695
+commonly used in all biology classes,
+especially in physiology, microbiology.
+
+00:23:15.040 --> 00:23:19.580
+And in chem chemistry, one B and
+in a lot of different chemical
+
+00:23:19.580 --> 00:23:21.260
+engineering applications as well.
+
+00:23:21.980 --> 00:23:23.140
+Thank you so much for listening.
+
+00:23:23.150 --> 00:23:24.070
+I hope this helped.
+
+00:23:24.230 --> 00:23:27.690
+And if it, if you need help, please
+reach out to me and let me know if
+
+00:23:27.690 --> 00:23:29.330
+there's anything that I can do to help.
+
+00:23:29.780 --> 00:23:33.060
+Um, if, if you are someone that needs
+help with your course, feel free to
+
+00:23:33.060 --> 00:23:34.850
+either message me or comment below.
+
+00:23:35.090 --> 00:23:36.030
+Let me know what you thought.
+
+00:23:36.459 --> 00:23:38.949
+Um, and if it's your first time
+here, hit that like and subscribe
+
+00:23:38.949 --> 00:23:40.080
+button and support the video.
+
+00:23:40.080 --> 00:23:41.330
+I really appreciate that.
+
+00:23:41.610 --> 00:23:43.040
+And thank you so much for listening.
+
+00:23:43.060 --> 00:23:45.419
+I hope you have a wonderful
+day and I'll see you later.
+
+00:23:45.479 --> 00:23:45.769
+Bye now.
+
