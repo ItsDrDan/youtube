@@ -1,8 +1,8 @@
 {
   "channel": "https://www.youtube.com/@itsdrdan",
-  "generatedAt": "2026-11-21T18:02:31.596777+00:00",
+  "generatedAt": "2026-11-22T18:34:52.342149+00:00",
   "videoCount": 151,
-  "captionCount": 31,
+  "captionCount": 32,
   "videos": [
     {
       "id": "Nb4z-SSwmb4",
@@ -674,7 +674,7 @@
       "uploadDate": "",
       "order": 47,
       "url": "https://www.youtube.com/watch?v=YqZjFTpnHjc",
-      "caption": null
+      "caption": "./captions/YqZjFTpnHjc.vtt"
     },
     {
       "id": "-PeAGG6s6nY",
